@@ -17,7 +17,7 @@ using Kudupix.Core;
 namespace Kudupix.Views
 {
     /// <summary>What the grid shows.</summary>
-    public enum ViewKind { All, Videos, Starred, ByMonth, Duplicates, Album, Folder, Tag }
+    public enum ViewKind { All, Videos, Starred, ByMonth, Duplicates, Album, Folder, Tag, People, Person }
 
     /// <summary>
     /// The main window: the library on the left (everything, videos, starred, by month, duplicates, albums, folders,
@@ -49,6 +49,9 @@ namespace Kudupix.Views
         private readonly DispatcherTimer _searchTimer = new DispatcherTimer { Interval = TimeSpan.FromMilliseconds(300) };
         private ViewerView _viewer;
         private DuplicatesView _duplicates;
+        private readonly PeopleWork _people;
+        private PeopleView _peopleView;
+        private Button _personButton;
 
         public ViewKind Kind { get; private set; } = ViewKind.All;
         /// <summary>The album id, folder path or tag shown.</summary>
@@ -58,6 +61,8 @@ namespace Kudupix.Views
         public PhotoGrid Grid => _grid;
         public ViewerView Viewer => _viewer;
         public DuplicatesView Duplicates => _duplicates;
+        public PeopleWork People => _people;
+        public PeopleView PeoplePage => _peopleView ?? (_peopleView = new PeopleView(this));
 
         public MainWindow(Catalog catalog)
         {
@@ -111,6 +116,17 @@ namespace Kudupix.Views
                 FillSide();
             };
             _catalog.Status += t => _status.Text = t;
+            _people = new PeopleWork(catalog);
+            _people.Changed += () =>
+            {
+                FillSide();
+                if (Kind == ViewKind.People) PeoplePage.Fill();
+                else if (Kind == ViewKind.Person) Refresh();
+                UpdatePersonButton();
+                if (_viewer != null && ViewerOpen) _viewer.FacesChanged();
+                if (_grid.Selected.Count == 1) ShowInfo();
+            };
+            _people.Status += t => _status.Text = t ?? (_catalog.Scanning ? _status.Text : _catalog.StatusText());
 
             _searchTimer.Tick += (s, e) =>
             {
@@ -124,7 +140,11 @@ namespace Kudupix.Views
                 Refresh();
                 await CheckForUpdates();
             };
-            Closed += (s, e) => _catalog.Dispose();
+            Closed += (s, e) =>
+            {
+                _people.Dispose();
+                _catalog.Dispose();
+            };
         }
 
         // ================================================================== header and status
@@ -260,6 +280,16 @@ namespace Kudupix.Views
             Item("IconCalendar", "By month", ViewKind.ByMonth, null, null);
             Item("IconCopy", "Duplicates", ViewKind.Duplicates, null, _duplicates?.GroupCount > 0 ? N(_duplicates.GroupCount) : null, 0, "warn");
 
+            if (_people != null && _people.Problem == null)
+            {
+                Heading("People");
+                var groups = _people.Groups;
+                var asks = groups.Ask.Where(a => !a.Key.Hidden).Sum(a => a.Value.Count);
+                Item("IconUser", "People", ViewKind.People, null, groups.Unnamed.Count + asks > 0 ? N(groups.Unnamed.Count + asks) : null, 0, "warn");
+                foreach (var p in _catalog.People.People().Where(p => !p.Hidden))
+                    Item("IconUser", p.Name, ViewKind.Person, p.Id, N(_people.PhotoCount(p)), 1);
+            }
+
             Heading("Albums");
             foreach (var a in _catalog.Data.Albums())
             {
@@ -327,12 +357,20 @@ namespace Kudupix.Views
                 _infoPanel.Visibility = Visibility.Collapsed;
                 _duplicates.Start();
             }
+            else if (kind == ViewKind.People)
+            {
+                _middle.Content = PeoplePage;
+                _infoPanel.Visibility = Visibility.Collapsed;
+                PeoplePage.ShowOverview();
+                UpdateCounts(null);
+            }
             else
             {
                 _middle.Content = _gridPage;
                 _infoPanel.Visibility = Visibility.Visible;
                 Refresh();
             }
+            UpdatePersonButton();
             FillSide();
         }
 
@@ -340,9 +378,17 @@ namespace Kudupix.Views
 
         private void BuildGridPage()
         {
+            _personButton = Ui.Small(Ui.Button("Faces and questions", "IconUser", "SecondaryButton", (s, e) =>
+            {
+                var person = _catalog.People.Find(ViewKey);
+                if (person == null) return;
+                Go(ViewKind.People);
+                PeoplePage.ShowPerson(person);
+            }));
+            _personButton.Visibility = Visibility.Collapsed;
             _gridPage.RowDefinitions.Add(new RowDefinition { Height = GridLength.Auto });
             _gridPage.RowDefinitions.Add(new RowDefinition());
-            var bar = Ui.Columns(Ui.Auto, Ui.Star(), Ui.Auto, Ui.Auto);
+            var bar = Ui.Columns(Ui.Auto, Ui.Star(), Ui.Auto, Ui.Auto, Ui.Auto);
             bar.Margin = new Thickness(18, 12, 18, 2);
             _title.TextTrimming = TextTrimming.CharacterEllipsis;
             bar.Children.Add(_title.At(0, 0));
@@ -363,6 +409,7 @@ namespace Kudupix.Views
             Button addTo = null;
             addTo = Ui.Small(Ui.Button("Add to album", "IconAlbum", "SecondaryButton", (s, e) => AlbumMenu(addTo)));
             bar.Children.Add(addTo.Margin(8, 0, 0, 0).At(0, 2));
+            bar.Children.Add(_personButton.Margin(8, 0, 0, 0).At(0, 4));
             bar.Children.Add(Ui.Small(Ui.Button("Fix", "IconEdit", "SecondaryButton", (s, e) =>
             {
                 var item = _grid.Current ?? _grid.SelectedInOrder.FirstOrDefault();
@@ -387,6 +434,11 @@ namespace Kudupix.Views
                     items = items.Where(i => set.Contains(i.Path));
                     break;
                 case ViewKind.Folder: items = items.Where(i => Library.Inside(i.Path, ViewKey)); break;
+                case ViewKind.Person:
+                    var person = _catalog.People.Find(ViewKey);
+                    var photos = person == null ? new HashSet<string>() : _people.PhotosOf(person);
+                    items = items.Where(i => photos.Contains(i.Path));
+                    break;
                 case ViewKind.Tag:
                     var tagged = data.PathsWithTag(ViewKey);
                     items = items.Where(i => tagged.Contains(i.Path));
@@ -399,7 +451,7 @@ namespace Kudupix.Views
             if (words.Count > 0)
             {
                 var albums = data.Albums();
-                items = items.Where(i => Search.Matches(i, words, data.Tags(i.Path), albums.Where(a => a.Paths.Contains(i.Path, StringComparer.OrdinalIgnoreCase)).Select(a => a.Name).ToList()));
+                items = items.Where(i => Search.Matches(i, words, data.Tags(i.Path).Concat(_people.PeopleIn(i.Path).Select(p => p.Name)).ToList(), albums.Where(a => a.Paths.Contains(i.Path, StringComparer.OrdinalIgnoreCase)).Select(a => a.Name).ToList()));
             }
             return items.ToList();
         }
@@ -407,7 +459,7 @@ namespace Kudupix.Views
         /// <summary>Shows the current view again (after a scan, a search or a change).</summary>
         public void Refresh()
         {
-            if (Kind == ViewKind.Duplicates)
+            if (Kind == ViewKind.Duplicates || Kind == ViewKind.People)
             {
                 UpdateCounts(null);
                 return;
@@ -424,6 +476,7 @@ namespace Kudupix.Views
                 case ViewKind.Album: _title.Text = _catalog.Data.FindAlbum(ViewKey)?.Name ?? "Album"; break;
                 case ViewKind.Folder: _title.Text = Path.GetFileName(ViewKey?.TrimEnd('\\', '/')) ?? ViewKey; break;
                 case ViewKind.Tag: _title.Text = "Tagged “" + ViewKey + "”"; break;
+                case ViewKind.Person: _title.Text = _catalog.People.Find(ViewKey)?.Name ?? "Person"; break;
                 default: _title.Text = "All photos and videos"; break;
             }
             if (Search.Words(_search.Text).Count > 0) _title.Text = "Search results";
@@ -566,6 +619,8 @@ namespace Kudupix.Views
             Detail("File date", new DateTime(item.Modified, DateTimeKind.Utc).ToLocalTime().ToString("d MMM yyyy, HH:mm", CultureInfo.CurrentCulture));
             Detail("Size", Format.Size(item.Size) + (item.ShownWidth > 0 ? $" · {item.ShownWidth} × {item.ShownHeight}" : string.Empty));
             if (item.IsVideo) Detail("Length", VideoLength.Text(item.Seconds));
+            var who = _people.PeopleIn(item.Path);
+            if (who.Count > 0) Detail("People", string.Join(", ", who.Select(p => p.Name)));
             Detail("Camera", string.Join(" · ", new[] { item.Camera, item.Exposure }.Where(x => !string.IsNullOrEmpty(x))));
             if (item.HasPlace)
                 Detail("Place", item.Latitude.Value.ToString("0.0000", CultureInfo.InvariantCulture) + ", " + item.Longitude.Value.ToString("0.0000", CultureInfo.InvariantCulture));
@@ -803,6 +858,22 @@ namespace Kudupix.Views
         public void SetStatus(string text) => _status.Text = text;
 
         // ================================================================== the viewer
+
+        /// <summary>Opens one photo on its own (from a face on the People page).</summary>
+        public void OpenAlone(MediaItem item)
+        {
+            Open(item);
+            _viewer.Show(new List<MediaItem> { item }, item);
+        }
+
+        private void UpdatePersonButton()
+        {
+            var person = Kind == ViewKind.Person ? _catalog.People.Find(ViewKey) : null;
+            _personButton.Visibility = person == null ? Visibility.Collapsed : Visibility.Visible;
+            if (person == null) return;
+            var asks = _people.Groups.Ask.TryGetValue(person, out var list) ? list.Count : 0;
+            _personButton.Content = Ui.Label("IconUser", asks > 0 ? $"Is this {person.Name}? ({asks:N0})" : "Faces and questions");
+        }
 
         public void Open(MediaItem item)
         {

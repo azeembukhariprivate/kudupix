@@ -16,6 +16,27 @@ namespace Kudupix.Tests
         // ExifTool's own test files.
         private const string ExifTool = "https://raw.githubusercontent.com/exiftool/exiftool/980409314fddbd83d9092b5c160fafab7f67fd52/t/images/";
 
+        // OpenCV's sample pictures (faces for the People tests), and its face models (OpenCV Zoo).
+        private const string OpenCv = "https://raw.githubusercontent.com/opencv/opencv/6d381e029fe26248675f48b2d44df23f4f288d11/samples/data/";
+        private const string OpenCvExtra = "https://raw.githubusercontent.com/opencv/opencv_extra/ebf9366b3845efe1e54bf2440cf238fd68905bab/testdata/cv/cascadeandhog/images/";
+        public const string Zoo = "https://media.githubusercontent.com/media/opencv/opencv_zoo/48b10fa505aeb51fbd127fc60a5c660040e823b7/models/";
+
+        public static string Lena => Get(OpenCv + "lena.jpg", "7de7ed51a1594fff247f4cae2301eceacf5313d6011e37b4a4c8733f7bb72c07");
+        public static string Messi => Get(OpenCv + "messi5.jpg", "1d570e49654e84c7a943918537bd9e5e1ef82920152e147c834006e235be97c9");
+        public static string Audrey => Get(OpenCvExtra + "audrybt1.png", "adb67ede8621f65144bd273512021b09bba4a736f6d2ce34c31b00badd63c498");
+        public static string Class => Get(OpenCvExtra + "class57.png", "271426705d40e9330c01dea1b26cfe1746ad81de88ed3fc2d36e4791a060508e");
+
+        /// <summary>The folder with both face models.</summary>
+        public static string Models
+        {
+            get
+            {
+                Get(Zoo + "face_detection_yunet/face_detection_yunet_2023mar.onnx", "8f2383e4dd3cfbb4553ea8718107fc0423210dc964f9f4280604804ed2552fa4");
+                Get(Zoo + "face_recognition_sface/face_recognition_sface_2021dec.onnx", "0ba9fbfa01b5270c96627c4ef784da859931e02f04419c829e83484087c34e79");
+                return Folder;
+            }
+        }
+
         public static string Canon => Get(Exif + "jpg/Canon_40D.jpg", "6bfdabd4fc33d112283c147acccc574e770bbe6fbdbc3d4da968ba7b606ecc2f");
         public static string Gps => Get(Exif + "jpg/gps/DSCN0010.jpg", "17307b1207eb6487d7908e9d154890b46e3d2e0192369cfd3f4c33d5a5af4035");
         public static string Portrait6 => Get(Exif + "jpg/orientation/portrait_6.jpg", "323ce0d7140be76cbe6511e268766241dfe74eddf34b73f27f4637e552c8d824");
@@ -38,7 +59,7 @@ namespace Kudupix.Tests
         /// <summary>Downloads all of them (the self-test uses the same folder).</summary>
         public static void All()
         {
-            foreach (var p in new[] { Canon, Gps, Portrait6, Landscape3, Tiff, Movie }) { }
+            foreach (var p in new[] { Canon, Gps, Portrait6, Landscape3, Tiff, Movie, Lena, Messi, Audrey, Class, Models }) { }
         }
 
         private static string Get(string url, string sha256)
@@ -46,7 +67,7 @@ namespace Kudupix.Tests
             var name = Uri.UnescapeDataString(url.Substring(url.LastIndexOf('/') + 1));
             var path = Path.Combine(Folder, name);
             if (File.Exists(path) && Hash(File.ReadAllBytes(path)) == sha256) return path;
-            using (var http = new HttpClient { Timeout = TimeSpan.FromMinutes(5) })
+            using (var http = new HttpClient { Timeout = TimeSpan.FromMinutes(10) })
             {
                 var data = http.GetByteArrayAsync(url).GetAwaiter().GetResult();
                 if (Hash(data) != sha256) throw new Exception($"Downloaded {name}, but it isn't the expected file.");

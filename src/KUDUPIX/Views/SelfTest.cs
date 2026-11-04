@@ -322,6 +322,84 @@ namespace Kudupix.Views
                 await Wait(() => catalog.Library.Find(added) == null, 30, "a deleted photo to go");
             });
 
+            await Step("People: faces found on this PC", async () =>
+            {
+                Expect(main.People.Problem == null, "People works: " + main.People.Problem);
+                var faces = Path.Combine(pictures, "Faces");
+                Directory.CreateDirectory(faces);
+                var lena = Imaging.ToPixels(Imaging.Decode(Sample("lena.jpg"), 1, 0));
+                File.Copy(Sample("lena.jpg"), Path.Combine(faces, "Lena.jpg"));
+                Imaging.Save(Mirror(lena), null, Path.Combine(faces, "Lena mirrored.jpg"), 90, true);
+                Imaging.Save(ImageOps.Straighten(ImageOps.Shrink(lena, 360), 5), null, Path.Combine(faces, "Lena smaller.jpg"), 90, true);
+                File.Copy(Sample("messi5.jpg"), Path.Combine(faces, "messi5.jpg"));
+                File.Copy(Sample("audrybt1.png"), Path.Combine(faces, "audrybt1.png"));
+                File.Copy(Sample("class57.png"), Path.Combine(faces, "class57.png"));
+                await Wait(() => catalog.Library.All().Count(i => Library.Inside(i.Path, faces)) == 6, 60, "the face photos in the library");
+                main.People.Wake();
+                await Wait(() => catalog.Library.All().Where(i => !i.IsVideo).All(i => catalog.Faces.Done(i)) && !main.People.Busy, 240,
+                    () => $"faces to be looked for ({main.People.Done} of {main.People.Total})");
+                await Wait(() => main.People.Groups.Unnamed.Any(g => g.Count == 3), 30, () => "the three photos of Lena grouped, got groups of " + string.Join(", ", main.People.Groups.Unnamed.Select(g => g.Count)));
+                Expect(catalog.Faces.Get(Path.Combine(faces, "class57.png")).Faces.Count >= 30, "the faces in the class photo");
+                Note($"{catalog.Faces.All().Count} faces in {catalog.Faces.PhotoCount} photos");
+                main.Go(ViewKind.People);
+                Pump();
+                Screenshots.All("People");
+            });
+
+            await Step("People: naming someone", async () =>
+            {
+                var faces = Path.Combine(pictures, "Faces");
+                var group = main.People.Groups.Unnamed.First(g => g.Count == 3);
+                main.PeoplePage.ShowGroup(group);
+                Pump();
+                Screenshots.All("Who is this");
+                var lena = main.PeoplePage.NameGroup("Lena");
+                Expect(lena != null && lena.Faces.Count == 3, "named");
+                await Wait(() => main.People.Groups.PersonOf.Values.Count(p => p == lena) == 3, 20, "her faces");
+                // A new photo of her joins her by itself.
+                var darker = new EditRecipe { Brightness = -35 }.Apply(Imaging.ToPixels(Imaging.Decode(Sample("lena.jpg"), 1, 0)));
+                Imaging.Save(darker, null, Path.Combine(faces, "Lena evening.jpg"), 90, true);
+                await Wait(() => main.People.PhotoCount(lena) == 4, 90, () => "a new photo of her to join her, got " + main.People.PhotoCount(lena));
+                main.Go(ViewKind.Person, lena.Id);
+                Expect(main.Grid.Items.Count == 4, "her photos, got " + main.Grid.Items.Count);
+                Pump();
+                Screenshots.All("A person's photos");
+                main.Go(ViewKind.All);
+                SetSearch(main, "lena");
+                await Wait(() => main.Grid.Items.Count == 4, 5, () => "search by name, got " + main.Grid.Items.Count);
+                SetSearch(main, string.Empty);
+                await Wait(() => main.Grid.Items.Count > 30, 5, "search cleared");
+                main.Go(ViewKind.People);
+                main.PeoplePage.ShowPerson(lena);
+                Pump();
+                Screenshots.All("A person");
+            });
+
+            await Step("People: faces in the viewer", async () =>
+            {
+                var faces = Path.Combine(pictures, "Faces");
+                main.Go(ViewKind.All);
+                main.Open(Find("Lena.jpg"));
+                var v = main.Viewer;
+                await Wait(() => v.PictureShown, 30, "the photo");
+                v.ShowFaces(true);
+                Pump();
+                Expect(v.FaceFrames.Count == 1 && v.FaceFrames[0].Name == "Lena", "a frame with her name: " + string.Join(", ", v.FaceFrames.Select(f => f.Name)));
+                Screenshots.All("Faces in the viewer");
+                // "Not a face" on one of the class photo's faces: it's left out.
+                var classPhoto = Path.Combine(faces, "class57.png");
+                var before = catalog.Faces.Get(classPhoto).Faces.Count;
+                catalog.People.NotAFace(FaceStore.Id(classPhoto, 0));
+                main.Viewer.Show(main.Grid.Items.ToList(), Find("class57.png"));
+                await Wait(() => v.PictureShown, 30, "the class photo");
+                await Task.Delay(800);
+                Pump();
+                Expect(v.FaceFrames.Count == before - 1, $"a frame for each face but the one that isn't ({v.FaceFrames.Count} of {before})");
+                Screenshots.All("Class photo faces");
+                v.ShowFaces(false);
+                main.CloseViewer();
+            });
+
             await Step("Folders window", () =>
             {
                 var w = new SettingsWindow(main, true);
@@ -359,6 +437,8 @@ namespace Kudupix.Views
                 Expect(again.Data.Albums().Any(a => a.Name == "Best of 2008"), "the album");
                 Expect(again.Data.Stars(Path.Combine(pictures, "Holiday", "Italy 2008.jpg")) == 4, "the stars");
                 Expect(again.Data.Edit(Path.Combine(pictures, "Canon_40D.jpg"))?.AutoFix == true, "the fixes");
+                Expect(again.People.FindByName("lena")?.Faces.Count >= 3, "the people named");
+                Expect(again.Faces.PhotoCount >= 30, "the faces found");
                 again.Dispose();
                 return Task.CompletedTask;
             });
@@ -369,6 +449,15 @@ namespace Kudupix.Views
             try { Directory.Delete(_temp, true); }
             catch { /* ignore */ }
             return Errors.Count == 0 ? 0 : 1;
+        }
+
+        private static Pixels Mirror(Pixels p)
+        {
+            var o = new Pixels(p.Width, p.Height);
+            for (var y = 0; y < p.Height; y++)
+                for (var x = 0; x < p.Width; x++)
+                    Buffer.BlockCopy(p.Bgra, (y * p.Width + p.Width - 1 - x) * 4, o.Bgra, (y * p.Width + x) * 4, 4);
+            return o;
         }
 
         private static void SetSearch(MainWindow main, string text)

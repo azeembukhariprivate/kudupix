@@ -6,7 +6,34 @@ KUDUPIX is released under the MIT License (see LICENSE.txt).
 Everything in KUDUPIX is its own code: reading photo details (EXIF in JPEG and TIFF
 files, and the size of PNG, GIF, BMP and WebP pictures), reading video details (MP4,
 MOV and 3GP files), the library, the photo fixes, finding duplicates, export and
-printing. No third-party code is included.
+printing, and People (grouping faces and naming them) is its own code.
+
+People uses these third-party components (all on this PC; nothing is sent anywhere):
+
+1. ONNX Runtime 1.28.0 (Microsoft.ML.OnnxRuntime), MIT License
+   Runs the face models. Files: Microsoft.ML.OnnxRuntime.dll, onnxruntime.dll,
+   onnxruntime_providers_shared.dll
+   Copyright (c) Microsoft Corporation. https://github.com/microsoft/onnxruntime
+
+2. YuNet face detection model (face_detection_yunet_2023mar.onnx), MIT License
+   Copyright (c) 2020 Shiqi Yu. From the OpenCV Zoo:
+   https://github.com/opencv/opencv_zoo/tree/main/models/face_detection_yunet
+   Its licence is in models\LICENSE-YuNet.txt.
+
+3. SFace face recognition model (face_recognition_sface_2021dec.onnx), Apache License 2.0
+   From the OpenCV Zoo:
+   https://github.com/opencv/opencv_zoo/tree/main/models/face_recognition_sface
+   Its licence is in models\LICENSE-SFace.txt.
+
+MIT License (ONNX Runtime):
+Permission is hereby granted, free of charge, to any person obtaining a copy of this
+software and associated documentation files (the "Software"), to deal in the Software
+without restriction, including without limitation the rights to use, copy, modify,
+merge, publish, distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to the following
+conditions: The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software. THE SOFTWARE IS PROVIDED "AS IS",
+WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED.
 
 It uses parts of Windows that come with it:
 
@@ -17,7 +44,8 @@ It uses parts of Windows that come with it:
 - File Explorer's own thumbnails, for videos and kinds of picture WPF can't open.
 - The Recycle Bin, for anything KUDUPIX is asked to remove.
 
-The tests (not part of the app) download sample photos from ianare/exif-samples
+The tests (not part of the app) download sample photos (and OpenCV's sample face
+pictures) from ianare/exif-samples
 (https://github.com/ianare/exif-samples) and a sample video from ExifTool's tests
 (https://github.com/exiftool/exiftool); they are not copied into this repository
 or included in KUDUPIX.

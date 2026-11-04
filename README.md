@@ -23,6 +23,7 @@
 - **Fix photos without spoiling them**: auto-fix, turn, crop, straighten, red-eye, brightness, contrast, warmth and colour. Your fixes are kept in KUDUPIX and can be changed or undone any time; the file stays as it is until you save.
   - **Save a copy** makes a new file next to the photo, such as `Beach (edited).jpg`, keeping the date taken and the camera details.
   - **Save over the original** asks first, and keeps the untouched photo, so **Put the original back** can undo it later.
+- **People**: KUDUPIX finds the faces in your photos by itself, in the background, and puts the same person's faces together. Name someone once and they're listed under *People*, with all their photos; new photos of them join by themselves, and when KUDUPIX isn't sure it asks ("Is this Mum?"). Fix mistakes easily: *Not this person*, give a face to someone else, *Not a face*, join two people who are the same, or hide people. In the viewer, *Show faces* puts a frame with the name round each face. Names work in search too. It all happens on your PC: no photo or face ever leaves it. Faces too small to tell who it is (in big group photos) are only named by hand. Photos only, not videos.
 - **Duplicates**: finds copies of the same photo or video, including photos saved smaller or sent through messaging apps. The best copy of each is ticked to keep (you can change it); the others go to the Recycle Bin, so they can be brought back.
 - **Export**: copies to share, made smaller if you like, with your fixes, and without where the photos were taken (you choose). Videos are copied as they are.
 - **Slideshow and printing**: full-screen slideshows that fade from one photo to the next (F5), and printing a photo per page.
@@ -54,9 +55,9 @@ Requires 64-bit Windows 10 or 11.
 
 ## Privacy
 
-KUDUPIX works on your computer only, and your photos and videos never leave it. It uses the internet for two things: an optional check for a newer version on GitHub (it can be turned off in Settings), and, only when you click *Show the place on a map*, opening OpenStreetMap in your browser.
+KUDUPIX works on your computer only, and your photos, videos and the faces in them never leave it. Finding people uses two small face models from the OpenCV project, which come with KUDUPIX and run on your PC. It uses the internet for two things: an optional check for a newer version on GitHub (it can be turned off in Settings), and, only when you click *Show the place on a map*, opening OpenStreetMap in your browser.
 
-Everything KUDUPIX adds (the list of your photos, stars, tags, albums, fixes, small pictures for the grid, and the originals kept before *Save over the original*) is kept in `%LOCALAPPDATA%\KUDUPIX`. Settings are in `HKEY_CURRENT_USER\Software\KUDUPIX`. Uninstalling asks whether to remove that folder too; your photos and videos are never touched.
+Everything KUDUPIX adds (the list of your photos, stars, tags, albums, fixes, the faces found and the names you gave them, small pictures for the grid, and the originals kept before *Save over the original*) is kept in `%LOCALAPPDATA%\KUDUPIX`. Settings are in `HKEY_CURRENT_USER\Software\KUDUPIX`. Uninstalling asks whether to remove that folder too; your photos and videos are never touched.
 
 ## Build from source
 
@@ -67,7 +68,9 @@ dotnet run --project tests/KUDUPIX.Tests
 dotnet build src/KUDUPIX/KUDUPIX.csproj -c Release -o out/KUDUPIX
 ```
 
-The tests use real photos and a real video from other open-source projects ([exif-samples](https://github.com/ianare/exif-samples) and [ExifTool](https://github.com/exiftool/exiftool)'s tests), downloaded at a fixed version and checked before use: reading when photos were taken, cameras, places and which way up they are, video lengths and sizes, the library and its scans (new, changed, moved and removed files), stars, tags and albums, search, every photo fix, finding duplicates, names for new files, and the originals kept before saving over them. `KUDUPIX.exe --self-test --samples <the tests' samples-cache folder>` drives the real app on Windows with its own data and settings: the library, thumbnails, stars, tags, albums and search, the viewer and every fix, saving a copy, saving over the original and putting it back, a video, duplicates, export, the slideshow, printing, the folders being watched, and every window in both themes; it writes `self-test.log` and exits. To build the installer, install [Inno Setup 6](https://jrsoftware.org/isinfo.php) and compile `installer/KUDUPIX.iss`.
+People needs the two face models in a `models` folder next to `KUDUPIX.exe`; the tests download them (`tests/KUDUPIX.Tests/samples-cache`) and the GitHub Actions workflow copies them in.
+
+The tests use real photos and a real video from other open-source projects ([exif-samples](https://github.com/ianare/exif-samples) and [ExifTool](https://github.com/exiftool/exiftool)'s tests), downloaded at a fixed version and checked before use: reading when photos were taken, cameras, places and which way up they are, video lengths and sizes, the library and its scans (new, changed, moved and removed files), stars, tags and albums, search, every photo fix, finding duplicates, names for new files, the originals kept before saving over them, and People: finding faces in real photos (OpenCV's sample pictures, including a class photo), telling the same person from different people, grouping faces, naming, asking about unsure faces, and "not this person" and "not a face". `KUDUPIX.exe --self-test --samples <the tests' samples-cache folder>` drives the real app on Windows with its own data and settings: the library, thumbnails, stars, tags, albums and search, the viewer and every fix, saving a copy, saving over the original and putting it back, a video, duplicates, export, the slideshow, printing, the folders being watched, people (finding faces, naming a group, a new photo joining by itself, search by name, face frames in the viewer), and every window in both themes; it writes `self-test.log` and exits. To build the installer, install [Inno Setup 6](https://jrsoftware.org/isinfo.php) and compile `installer/KUDUPIX.iss`.
 
 ### Shared code
 

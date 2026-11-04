@@ -29,6 +29,11 @@ namespace Kudupix.Core
 
         public static string LibraryFile => Path.Combine(Root, "library.bin");
         public static string UserDataFile => Path.Combine(Root, "userdata.json");
+        public static string FacesFile => Path.Combine(Root, "faces.bin");
+        public static string PeopleFile => Path.Combine(Root, "people.json");
+
+        /// <summary>The face models, in a "models" folder next to KUDUPIX.exe (put there by the installer).</summary>
+        public static string Models => Path.Combine(Path.GetDirectoryName(typeof(AppPaths).Assembly.Location) ?? ".", "models");
         public static string Thumbs => Path.Combine(Root, "Thumbs");
         public static string Originals => Path.Combine(Root, "Originals");
         public static string Temp => Path.Combine(Root, "Temp");

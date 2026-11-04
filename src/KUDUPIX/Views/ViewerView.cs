@@ -57,6 +57,75 @@ namespace Kudupix.Views
 
         public event Action Closed;
 
+        private readonly TextBlock _names = new TextBlock { Foreground = new SolidColorBrush(Color.FromArgb(0xDD, 255, 255, 255)), FontSize = 13, HorizontalAlignment = HorizontalAlignment.Left, VerticalAlignment = VerticalAlignment.Top, TextTrimming = TextTrimming.CharacterEllipsis };
+        private Button _facesButton;
+        private bool _showFaces;
+
+        /// <summary>The face frames drawn (for the self-test): face id and the name shown.</summary>
+        public List<(string Id, string Name)> FaceFrames { get; } = new List<(string, string)>();
+
+        public void ShowFaces(bool show)
+        {
+            _showFaces = show;
+            _facesButton.Content = Ui.Label("IconUser", show ? "Hide faces" : "Show faces");
+            DrawOverlay();
+        }
+
+        /// <summary>Who's who changed: the names and frames again.</summary>
+        public void FacesChanged()
+        {
+            ShowNames();
+            DrawOverlay();
+        }
+
+        private void ShowNames()
+        {
+            var item = Item;
+            var people = item == null || item.IsVideo ? new List<Person>() : _main.People.PeopleIn(item.Path);
+            _names.Text = people.Count == 0 ? string.Empty : "With " + string.Join(", ", people.Select(p => p.Name));
+        }
+
+        /// <summary>The fixes move things about (turned, straightened or cropped): faces are found on the photo as taken.</summary>
+        private bool Moved => _edit.Turns % 4 != 0 || Math.Abs(_edit.Straighten) >= 0.01 || _edit.HasCrop;
+
+        private void DrawFaces(double w, double h)
+        {
+            FaceFrames.Clear();
+            var item = Item;
+            var photo = item == null || item.IsVideo ? null : _main.Catalog.Faces.Get(item.Path);
+            if (photo == null) return;
+            if (Moved)
+            {
+                _names.Text = "Faces show on the photo as it was taken: undo turning, straightening and cropping to see them.";
+                return;
+            }
+            var groups = _main.People.Groups;
+            var notFaces = _main.Catalog.People.NotFaces();
+            for (var i = 0; i < photo.Faces.Count; i++)
+            {
+                var f = photo.Faces[i];
+                var id = FaceStore.Id(item.Path, i);
+                if (notFaces.Contains(id)) continue;
+                var name = groups.PersonOf.TryGetValue(id, out var p) ? p.Name : "Who is this?";
+                FaceFrames.Add((id, name));
+                var frame = new Rectangle { Width = f.W * w, Height = f.H * h, Stroke = p != null ? Brushes.White : new SolidColorBrush(Color.FromRgb(0xFF, 0xD5, 0x4A)), StrokeThickness = 2, RadiusX = 4, RadiusY = 4, IsHitTestVisible = false };
+                Canvas.SetLeft(frame, f.X * w);
+                Canvas.SetTop(frame, f.Y * h);
+                _overlay.Children.Add(frame);
+                var label = new Border
+                {
+                    Background = new SolidColorBrush(Color.FromArgb(0xB0, 0, 0, 0)),
+                    CornerRadius = new CornerRadius(3),
+                    Padding = new Thickness(5, 1, 5, 2),
+                    IsHitTestVisible = false,
+                    Child = new TextBlock { Text = name, Foreground = Brushes.White, FontSize = 12 }
+                };
+                Canvas.SetLeft(label, f.X * w);
+                Canvas.SetTop(label, (f.Y + f.H) * h + 3);
+                _overlay.Children.Add(label);
+            }
+        }
+
         public MediaItem Item => _index >= 0 && _index < _items.Count ? _items[_index] : null;
         public EditRecipe Edit => _edit;
         public bool PictureShown => _image.Source != null && _shownGeneration == _generation;
@@ -86,16 +155,21 @@ namespace Kudupix.Views
             _image.SizeChanged += (s, e) => DrawOverlay();
 
             // The top bar.
-            var top = Ui.Columns(Ui.Auto, Ui.Star(), Ui.Auto, Ui.Auto, Ui.Auto, Ui.Auto);
+            var top = Ui.Columns(Ui.Auto, Ui.Star(), Ui.Auto, Ui.Auto, Ui.Auto, Ui.Auto, Ui.Auto);
             top.Margin = new Thickness(16, 12, 16, 0);
             top.VerticalAlignment = VerticalAlignment.Top;
             top.Children.Add(Dark(Ui.Button("Back to photos", "IconBack", "GhostButton", (s, e) => Closed?.Invoke())).Tip("Esc").At(0, 0));
             top.Children.Add(_name.Margin(14, 0, 14, 0).At(0, 1));
             top.Children.Add(new Border { Child = _stars, Padding = new Thickness(10, 5, 10, 5), CornerRadius = new CornerRadius(5), Background = new SolidColorBrush(Color.FromArgb(0x22, 255, 255, 255)), Margin = new Thickness(0, 0, 8, 0) }.At(0, 2));
             top.Children.Add(Dark(Ui.Button("Slideshow", "IconPlay", "GhostButton", (s, e) => _main.Slideshow(Item))).Margin(0, 0, 8, 0).At(0, 3));
-            top.Children.Add(Dark(Ui.Button("Details", "IconInfo", "GhostButton", (s, e) => { _showDetails = !_showDetails; FillSide(); })).Margin(0, 0, 8, 0).At(0, 4));
-            top.Children.Add(Dark(Ui.Button("Delete", "IconTrash", "GhostButton", (s, e) => DeleteShown())).Tip("Move to the Recycle Bin (Delete)").At(0, 5));
+            _facesButton = Dark(Ui.Button("Show faces", "IconUser", "GhostButton", (s, e) => ShowFaces(!_showFaces)));
+            _facesButton.ToolTip = "A frame round each face, with who it is. Click a frame to name it or fix it.";
+            top.Children.Add(_facesButton.Margin(0, 0, 8, 0).At(0, 4));
+            top.Children.Add(Dark(Ui.Button("Details", "IconInfo", "GhostButton", (s, e) => { _showDetails = !_showDetails; FillSide(); })).Margin(0, 0, 8, 0).At(0, 5));
+            top.Children.Add(Dark(Ui.Button("Delete", "IconTrash", "GhostButton", (s, e) => DeleteShown())).Tip("Move to the Recycle Bin (Delete)").At(0, 6));
             _stage.Children.Add(top);
+            _names.Margin = new Thickness(70, 54, 70, 0);
+            _stage.Children.Add(_names);
 
             Button Arrow(string icon, string tip, Action go, HorizontalAlignment side)
             {
@@ -261,6 +335,7 @@ namespace Kudupix.Views
             FillStars();
             FillStrip();
             FillSide();
+            ShowNames();
             if (item.IsVideo)
             {
                 _picture.Visibility = Visibility.Collapsed;
@@ -523,6 +598,7 @@ namespace Kudupix.Views
                 }
                 return;
             }
+            if (_mode == Mode.None && _showFaces) DrawFaces(w, h);
             if (_mode != Mode.Crop) return;
             double l = _edit.CropLeft * w, t = _edit.CropTop * h, r = _edit.CropRight * w, b = _edit.CropBottom * h;
             var shade = new SolidColorBrush(Color.FromArgb(0x99, 0, 0, 0));
@@ -560,6 +636,22 @@ namespace Kudupix.Views
             {
                 AddRedEye(p.X / w, p.Y / h);
                 return;
+            }
+            if (_mode == Mode.None && _showFaces && !Moved && Item != null)
+            {
+                var photo = _main.Catalog.Faces.Get(Item.Path);
+                for (var i = 0; photo != null && i < photo.Faces.Count; i++)
+                {
+                    var f = photo.Faces[i];
+                    if (p.X < f.X * w || p.X > (f.X + f.W) * w || p.Y < f.Y * h || p.Y > (f.Y + f.H) * h) continue;
+                    var id = FaceStore.Id(Item.Path, i);
+                    _main.People.Groups.PersonOf.TryGetValue(id, out var current);
+                    var menu = _main.PeoplePage.FaceMenu(id, current);
+                    menu.PlacementTarget = _overlay;
+                    menu.IsOpen = true;
+                    e.Handled = true;
+                    return;
+                }
             }
             if (_mode != Mode.Crop) return;
             double l = _edit.CropLeft * w, t = _edit.CropTop * h, r = _edit.CropRight * w, b = _edit.CropBottom * h;

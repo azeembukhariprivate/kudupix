@@ -21,17 +21,24 @@ namespace Kudupix.Views
         private readonly List<FileSystemWatcher> _watchers = new List<FileSystemWatcher>();
         private CancellationTokenSource _scanCancel;
         private bool _libraryDirty;
+        private bool _peopleDirty;
+        private bool _facesDirty;
         private bool _scanAgain;
 
         public Library Library { get; }
         public UserData Data { get; }
         public Originals Originals { get; }
+        public FaceStore Faces { get; }
+        public PeopleData People { get; }
 
         /// <summary>The library changed (a scan found something, or a file was saved or removed).</summary>
         public event Action Changed;
 
         /// <summary>Stars, tags, albums or fixes changed.</summary>
         public event Action DataChanged;
+
+        /// <summary>People, or the faces found, changed.</summary>
+        public event Action PeopleChanged;
 
         /// <summary>What the status bar says about looking through the folders.</summary>
         public event Action<string> Status;
@@ -48,6 +55,17 @@ namespace Kudupix.Views
             Originals = new Originals(AppPaths.Originals);
             Library.Load();
             Data.Load();
+            Faces = new FaceStore(AppPaths.FacesFile);
+            People = new PeopleData(AppPaths.PeopleFile);
+            Faces.Load();
+            People.Load();
+            People.Changed += () => _ui.BeginInvoke(new Action(() =>
+            {
+                _peopleDirty = true;
+                _saveTimer.Stop();
+                _saveTimer.Start();
+                PeopleChanged?.Invoke();
+            }));
             _saveTimer = new DispatcherTimer { Interval = TimeSpan.FromSeconds(1.5) };
             _saveTimer.Tick += (s, e) =>
             {
@@ -108,7 +126,13 @@ namespace Kudupix.Views
             ScansDone++;
             LastScan = result;
             if (_scanCancel == cancel) _scanCancel = null;
-            foreach (var (from, to) in result.Moved) Data.Move(from, to);
+            foreach (var (from, to) in result.Moved)
+            {
+                Data.Move(from, to);
+                Faces.Move(from, to);
+                People.Move(from, to);
+                _facesDirty = true;
+            }
             if (result.AnyChange)
             {
                 _libraryDirty = true;
@@ -213,6 +237,8 @@ namespace Kudupix.Views
             var gone = items.Where(i => !File.Exists(i.Path)).ToList();
             foreach (var g in gone) Library.Remove(g.Path);
             Data.Forget(gone.Select(g => g.Path));
+            People.Forget(gone.Select(g => g.Path));
+            _facesDirty = true;
             _libraryDirty = true;
             _saveTimer.Stop();
             _saveTimer.Start();
@@ -228,8 +254,31 @@ namespace Kudupix.Views
             _saveTimer.Start();
         }
 
+        /// <summary>Faces were found: keep them soon.</summary>
+        public void FacesTouched()
+        {
+            _facesDirty = true;
+            _saveTimer.Stop();
+            _saveTimer.Start();
+        }
+
         public void SaveNow()
         {
+            try
+            {
+                if (_peopleDirty) People.Save();
+                _peopleDirty = false;
+                if (_facesDirty)
+                {
+                    Faces.Keep(Library.All().Select(i => i.Path).ToList());
+                    Faces.Save();
+                }
+                _facesDirty = false;
+            }
+            catch (Exception ex) when (ex is IOException || ex is UnauthorizedAccessException)
+            {
+                // Saved at the next change.
+            }
             try { Data.Save(); }
             catch (Exception ex) when (ex is IOException || ex is UnauthorizedAccessException) { Status?.Invoke("Couldn't save stars, tags and albums: " + ex.Message); }
             if (!_libraryDirty) return;

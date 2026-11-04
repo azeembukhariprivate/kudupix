@@ -56,6 +56,13 @@ out\KUDUPIX\KUDUPIX.exe --self-test --samples tests\KUDUPIX.Tests\samples-cache 
   can't link two different photos. The best copy is kept (`Best`); the rest go to the Recycle Bin.
 - The grid (`Views/PhotoGrid.cs`) is a virtualized list of rows (`GridRow`: a heading or a row of tiles), laid out again
   when the width or the picture size changes.
+- People (1.1): `Core/Faces.cs` (`FaceFinder`: YuNet finds faces and five points, SFace gives 128 numbers per lined-up
+  face, both via ONNX Runtime from `models\` next to the exe; `FaceStore`: faces.bin, positions and numbers only, never
+  face pictures), `Core/People.cs` (`PeopleData`: people.json, names, confirmed and rejected faces, "not a face";
+  `FaceGroups`: sure ≥ 0.50 joins by itself, 0.37–0.50 is asked about, unnamed faces grouped at 0.50; faces under 40
+  pixels (`Face.Clear`) are only named by hand, because small faces of different people look alike). `Views/PeopleWork.cs`
+  looks for faces in the background (photos only, slower while the PC is used), regroups after changes and makes face
+  crops; `Views/PeopleView.cs` is the People page. Face ids are "path|index" and follow moved photos.
 - The internet is only used for the update check and when the person clicks "Show the place on a map" (OpenStreetMap in
   the browser). Never add anything that sends data about the user.
 

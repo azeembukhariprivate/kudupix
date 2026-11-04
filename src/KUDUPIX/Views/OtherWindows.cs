@@ -184,11 +184,12 @@ namespace Kudupix.Views
             Row("Licence", Ui.Row(Ui.Text("MIT · free and open source  ", 12.5), Ui.Link("View", (s, e) => OpenLocal("LICENSE.txt"))));
             Row("Source code", Ui.Link("github.com/" + AppInfo.RepoOwner + "/" + AppInfo.RepoName, (s, e) => AppInfo.OpenUrl(AppInfo.RepoUrl)));
             Row("Pictures and videos", Ui.Text("Opened and played with Windows' own codecs and player", 12.5, wrap: true));
+            Row("People", Ui.Text("Faces found and told apart on this PC with the YuNet (MIT) and SFace (Apache 2.0) models from OpenCV, run by ONNX Runtime (MIT)", 12.5, wrap: true));
             Row("Third-party", Ui.Link("Third-party notices", (s, e) => OpenLocal("THIRD-PARTY-NOTICES.txt")));
             rows.Children.Add(Ui.Divider());
 
             var content = Ui.Column(header, rows,
-                Ui.Subtle("KUDUPIX works on your computer only. Your photos and videos never leave it, and it never changes them unless you choose “Save over the original” (which keeps the untouched photo first). The internet is used only to check for a new version, and to open a map when you ask.", 11.5)
+                Ui.Subtle("KUDUPIX works on your computer only. Your photos, videos and the faces in them never leave it, and it never changes them unless you choose “Save over the original” (which keeps the untouched photo first). The internet is used only to check for a new version, and to open a map when you ask.", 11.5)
                     .Margin(0, 14, 0, 0));
 
             Window window = null;
