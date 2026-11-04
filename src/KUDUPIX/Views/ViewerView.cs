@@ -192,7 +192,13 @@ namespace Kudupix.Views
         public void Show(List<MediaItem> items, MediaItem item)
         {
             _items = items.Count > 0 ? items : new List<MediaItem> { item };
-            _index = Math.Max(0, _items.IndexOf(item));
+            // Found by its path: the library may hold a newer copy of the same item.
+            _index = _items.FindIndex(x => string.Equals(x.Path, item.Path, StringComparison.OrdinalIgnoreCase));
+            if (_index < 0)
+            {
+                _items.Insert(0, item);
+                _index = 0;
+            }
             ShowCurrent();
             Focus();
         }

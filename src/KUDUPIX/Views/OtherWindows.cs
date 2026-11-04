@@ -533,7 +533,10 @@ namespace Kudupix.Views
     public static class Printing
     {
         /// <summary>The pages for these photos on paper of this size (in 1/96 inch).</summary>
-        public static FixedDocument Document(IList<MediaItem> photos, UserData data, Size page)
+        public static FixedDocument Document(IList<MediaItem> photos, UserData data, Size page) => Document(photos, data, page, new List<string>());
+
+        /// <summary>The pages, and in <paramref name="problems"/> the photos that couldn't be opened and why.</summary>
+        public static FixedDocument Document(IList<MediaItem> photos, UserData data, Size page, List<string> problems)
         {
             var doc = new FixedDocument();
             doc.DocumentPaginator.PageSize = page;
@@ -547,7 +550,11 @@ namespace Kudupix.Views
                     var edit = data.Edit(p.Path);
                     if (edit != null && !edit.IsEmpty) b = Imaging.ToBitmap(edit.Apply(Imaging.ToPixels(b)));
                 }
-                catch (Exception) { continue; }
+                catch (Exception ex)
+                {
+                    problems.Add(p.Name + ": " + ex.Message);
+                    continue;
+                }
                 var fixedPage = new FixedPage { Width = page.Width, Height = page.Height };
                 var image = new Image { Source = b, Stretch = Stretch.Uniform, Width = page.Width - margin * 2, Height = page.Height - margin * 2 };
                 FixedPage.SetLeft(image, margin);
@@ -566,10 +573,11 @@ namespace Kudupix.Views
             var dialog = new PrintDialog();
             if (dialog.ShowDialog() != true) return;
             var size = new Size(dialog.PrintableAreaWidth, dialog.PrintableAreaHeight);
-            var doc = Document(photos, data, size);
+            var problems = new List<string>();
+            var doc = Document(photos, data, size, problems);
             if (doc.Pages.Count == 0)
             {
-                Dialogs.Error(owner, "These photos couldn't be opened for printing.");
+                Dialogs.Error(owner, "These photos couldn't be opened for printing.\n\n" + string.Join("\n", problems.Take(5)));
                 return;
             }
             dialog.PrintDocument(doc.DocumentPaginator, "KUDUPIX photos");

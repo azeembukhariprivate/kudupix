@@ -109,10 +109,14 @@ namespace Kudupix.Views
 
             await Step("Thumbnails", async () =>
             {
+                // The grid only asks for the tiles on screen: ask for all of them.
+                var made = 0;
+                var photos = catalog.Library.All().Where(i => !i.IsVideo).ToList();
+                foreach (var p in photos)
+                    if (Thumbs.Get(p, null, b => { if (b != null) made++; }) != null) made++;
                 await Wait(() => Thumbs.Pending == 0, 90, "the small pictures");
                 Pump();
-                var made = catalog.Library.All().Where(i => !i.IsVideo).Count(i => Thumbs.Get(i, null, null) != null);
-                Note($"{made} of {catalog.Library.All().Count(i => !i.IsVideo)} photo thumbnails made");
+                Note($"{made} of {photos.Count} photo thumbnails made");
                 Expect(made >= 30, "photo thumbnails made, got " + made);
                 var video = Thumbs.Get(Find("QuickTime.mov"), null, null);
                 Note(video != null ? "video thumbnail made by Windows" : "Windows made no video thumbnail here (the tile shows a video sign)");
@@ -152,7 +156,7 @@ namespace Kudupix.Views
                 SetSearch(main, "nikon");
                 await Wait(() => main.Grid.Items.Count == 2, 5, "search by camera");
                 SetSearch(main, "best 2008");
-                await Wait(() => main.Grid.Items.Count == 2, 5, "search by album and year (photos)");
+                await Wait(() => main.Grid.Items.Count == 2, 5, () => "search by album and year, got " + string.Join(", ", main.Grid.Items.Select(i => i.Name)));
                 SetSearch(main, string.Empty);
                 await Wait(() => main.Grid.Items.Count == 32, 5, "search cleared");
                 main.Grid.Select(canon);
@@ -203,6 +207,7 @@ namespace Kudupix.Views
                 var before = File.ReadAllBytes(item.Path);
                 var date = File.GetLastWriteTimeUtc(item.Path);
                 main.Viewer.Show(main.Grid.Items.ToList(), item);
+                Expect(main.Viewer.Item.Path == item.Path, "the photo asked for is shown");
                 await Wait(() => main.Viewer.PictureShown, 30, "the photo");
                 main.Viewer.SetSlider("Contrast", 30);
                 Expect(await main.Viewer.SaveOver(false), "saved over");
@@ -235,7 +240,7 @@ namespace Kudupix.Views
                 main.Go(ViewKind.Duplicates);
                 var d = main.Duplicates;
                 await Wait(() => !d.Working, 90, "the copies to be found");
-                Expect(d.GroupCount == 1, "one group of copies, got " + d.GroupCount);
+                Expect(d.GroupCount == 1, "one group of copies, got " + string.Join(" / ", d.Rows.Select(r => string.Join(", ", r.Group.Items.Select(i => i.Name)))));
                 var group = d.Rows[0];
                 Expect(group.Group.Items.Count == 3, "the photo, its exact copy and the small one: got " + string.Join(", ", group.Group.Items.Select(i => i.Name)));
                 Expect(group.Keep.Single().Name == "DSCN0010.jpg", "keep the original");
@@ -287,8 +292,9 @@ namespace Kudupix.Views
             await Step("Print pages", () =>
             {
                 var photos = main.Grid.Items.Where(i => !i.IsVideo).Take(3).ToList();
-                var doc = Printing.Document(photos, catalog.Data, new Size(816, 1056));
-                Expect(doc.Pages.Count == 3, "a page for each photo");
+                var problems = new List<string>();
+                var doc = Printing.Document(photos, catalog.Data, new Size(816, 1056), problems);
+                Expect(doc.Pages.Count == 3, "a page for each photo, got " + doc.Pages.Count + " (" + string.Join("; ", problems) + ")");
                 return Task.CompletedTask;
             });
 
@@ -377,13 +383,18 @@ namespace Kudupix.Views
         /// <summary>A made-up photo: a gradient with blocks, different for each number.</summary>
         private static Pixels Scene(int w, int h, int seed)
         {
+            var random = new Random(seed * 7919);
+            var blocks = new int[8, 6];
+            for (var bx = 0; bx < 8; bx++)
+                for (var by = 0; by < 6; by++)
+                    blocks[bx, by] = random.Next(0, 200);
+            var tint = random.Next(0, 3);
             var p = new Pixels(w, h);
             for (var y = 0; y < h; y++)
                 for (var x = 0; x < w; x++)
                 {
-                    var block = (x * 8 / w) * 7 + (y * 6 / h) * 13 + seed * 29;
-                    var shade = (int)((uint)(block * 2654435761u) >> 24) % 90;
-                    p.Set(x, y, (byte)Math.Min(255, 40 + 150 * x / w + shade), (byte)Math.Min(255, 60 + 120 * y / h + shade), (byte)(60 + seed * 37 % 150));
+                    var v = blocks[x * 8 / w, y * 6 / h] + 20 * x / w;
+                    p.Set(x, y, (byte)Math.Min(255, v + (tint == 0 ? 40 : 0)), (byte)Math.Min(255, v + (tint == 1 ? 40 : 0)), (byte)Math.Min(255, v + (tint == 2 ? 40 : 0)));
                 }
             return p;
         }
@@ -414,6 +425,16 @@ namespace Kudupix.Views
         private static void Expect(bool condition, string what)
         {
             if (!condition) throw new Exception("expected " + what);
+        }
+
+        private static async Task Wait(Func<bool> condition, int seconds, Func<string> what)
+        {
+            var until = DateTime.UtcNow.AddSeconds(seconds);
+            while (!condition())
+            {
+                if (DateTime.UtcNow > until) throw new Exception("timed out waiting for " + what());
+                await Task.Delay(50);
+            }
         }
 
         private static async Task Wait(Func<bool> condition, int seconds, string what)
