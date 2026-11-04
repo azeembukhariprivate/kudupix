@@ -209,6 +209,8 @@ namespace Kudupix.Views
             if (Visibility != Visibility.Visible) return;
             var item = Item;
             _items = items.ToList();
+            if (_items.Count == 0 && item != null && _main.Catalog.Library.Find(item.Path) is MediaItem only)
+                _items.Add(only);
             if (_items.Count == 0)
             {
                 Closed?.Invoke();
@@ -219,6 +221,14 @@ namespace Kudupix.Views
             {
                 _index = i;
                 if (!ReferenceEquals(_items[i], item)) ShowCurrent(); // the file was saved again
+                else FillStrip();
+            }
+            else if (item != null && _main.Catalog.Library.Find(item.Path) is MediaItem still)
+            {
+                // Not in the list shown behind any more (a search or a filter changed), but still there: keep showing it.
+                _items.Insert(Math.Min(_index, _items.Count), still);
+                _index = _items.IndexOf(still);
+                if (!ReferenceEquals(still, item)) ShowCurrent();
                 else FillStrip();
             }
             else

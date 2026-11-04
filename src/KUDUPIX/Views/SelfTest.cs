@@ -155,9 +155,19 @@ namespace Kudupix.Views
                 main.Go(ViewKind.All);
                 SetSearch(main, "nikon");
                 await Wait(() => main.Grid.Items.Count == 2, 5, "search by camera");
-                SetSearch(main, "best 2008");
-                await Wait(() => main.Grid.Items.Count == 2, 5, () => "search by album and year, got " + string.Join(", ", main.Grid.Items.Select(i => i.Name)));
-                SetSearch(main, string.Empty);
+                try
+                {
+                    SetSearch(main, "best 2008");
+                    await Wait(() => main.Grid.Items.Count == 3, 5, () => "search by album (its name has the year too), got " + string.Join(", ", main.Grid.Items.Select(i => i.Name)));
+                    SetSearch(main, "favourites 2008 nikon");
+                    await Wait(() => main.Grid.Items.Count == 1, 5, () => "search by tag, year and camera, got " + string.Join(", ", main.Grid.Items.Select(i => i.Name)));
+                    SetSearch(main, "videos 2005");
+                    await Wait(() => main.Grid.Items.Count == 1 && main.Grid.Items[0].IsVideo, 5, () => "search for videos filmed in 2005, got " + string.Join(", ", main.Grid.Items.Select(i => i.Name)));
+                }
+                finally
+                {
+                    SetSearch(main, string.Empty);
+                }
                 await Wait(() => main.Grid.Items.Count == 32, 5, "search cleared");
                 main.Grid.Select(canon);
                 Pump();
