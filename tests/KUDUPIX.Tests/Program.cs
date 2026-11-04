@@ -63,7 +63,7 @@ namespace Kudupix.Tests
 
         private static string Folder(string name)
         {
-            var dir = Path.Combine(_root, name);
+            var dir = Path.GetFullPath(Path.Combine(_root, name));
             Directory.CreateDirectory(dir);
             return dir;
         }
