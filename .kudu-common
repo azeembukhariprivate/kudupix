@@ -1,0 +1,13 @@
+# Shared code copied from https://github.com/azeembukhariprivate/kudu-common by its sync.py.
+commit 17b7af14ec07c32fe6754f25553c5e80e266c691
+folder src/KUDUPIX
+- Views/Dialogs.cs
+- Views/Screenshots.cs
+- Core/Admin.cs
+- Core/AppInfo.cs
+- Core/Args.cs
+- Core/ThemeManager.cs
+- Core/Unelevated.cs
+- Core/UpdateChecker.cs
+- Controls/Glyph.cs
+- Controls/Ui.cs

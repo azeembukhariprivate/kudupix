@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- Checks KUDUPIX's core with real photos and videos: reading their details, the library and its scans, stars, tags
+       and albums, search, the photo fixes, duplicates, names for new files and kept originals.
+       Runs on any OS with: dotnet run, project tests/KUDUPIX.Tests -->
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <IsPackable>false</IsPackable>
+    <NoWarn>$(NoWarn);CA1416</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\..\src\KUDUPIX\Core\*.cs" Exclude="..\..\src\KUDUPIX\Core\ThemeManager.cs" LinkBase="Core" />
+  </ItemGroup>
+
+</Project>
