@@ -426,7 +426,7 @@ namespace Kudupix.Views
             for (var n = 1; n <= 5; n++)
             {
                 var value = n;
-                var t = new TextBlock { Text = "★", FontSize = 15, Cursor = Cursors.Hand, Margin = new Thickness(1, 0, 1, 0), ToolTip = value + (value == 1 ? " star" : " stars") + " (key " + value + ")" };
+                var t = new TextBlock { Text = "★", FontSize = 15, Cursor = Cursors.Hand, Margin = new Thickness(1, 0, 1, 0), ToolTip = Lang.T("{0} (key {1})", value == 1 ? Lang.T("1 star") : Lang.T("{0} stars", value), value) };
                 t.Foreground = value <= stars ? new SolidColorBrush(Color.FromRgb(0xFF, 0xD5, 0x4A)) : new SolidColorBrush(Color.FromArgb(0x66, 255, 255, 255));
                 t.MouseLeftButtonUp += (s, e) => SetStars(stars == value ? 0 : value);
                 _stars.Children.Add(t);

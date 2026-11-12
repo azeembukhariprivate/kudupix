@@ -70,6 +70,9 @@ namespace Kudupix.Tests
 
         // ================================================================== reading photos
 
+        private static void TestOtherLanguages() => LangTests.Run();
+
+
         private static void TestCanonPhoto()
         {
             var d = PhotoInfo.Read(Samples.Canon);

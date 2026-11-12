@@ -63,6 +63,9 @@ namespace Kudupix.Views
                 }
                 root.Children.Add(themes);
 
+                root.Children.Add(Ui.Heading("Language", 14).Margin(0, 16, 0, 6));
+                root.Children.Add(LangUi.Picker());
+
                 root.Children.Add(Ui.Heading("Space KUDUPIX uses", 14).Margin(0, 18, 0, 4));
                 var thumbs = Ui.Subtle(string.Empty, 12.5, true);
                 void ShowThumbs() => thumbs.Text = "Small pictures for the grid: " + Format.Size(Thumbs.SizeOnDisk()) + ". They're made again when needed.";
@@ -275,7 +278,8 @@ namespace Kudupix.Views
 
             var root = new StackPanel { Margin = new Thickness(26, 22, 26, 22) };
             root.Children.Add(Ui.Heading("Export", 20));
-            var what = (photos > 0 ? Format.Count(photos, "photo") : string.Empty) + (photos > 0 && videos > 0 ? " and " : string.Empty) + (videos > 0 ? Format.Count(videos, "video") : string.Empty);
+            var what = photos > 0 && videos > 0 ? Lang.T("{0} and {1}", Format.Count(photos, "photo"), Format.Count(videos, "video"))
+                : photos > 0 ? Format.Count(photos, "photo") : Format.Count(videos, "video");
             root.Children.Add(Ui.Subtle($"Copies of {what}, to share or keep elsewhere. Photos get their fixes; videos are copied as they are. The originals stay as they are.", 12.5).Margin(0, 4, 0, 14));
 
             root.Children.Add(Ui.Text("Photo size (the longest side)", 12.5, bold: true).Margin(0, 0, 0, 6));

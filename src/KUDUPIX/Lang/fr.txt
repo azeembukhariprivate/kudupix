@@ -1,0 +1,341 @@
+KUDUPIX is already open.	KUDUPIX est déjà ouvert.
+Something went wrong:\n\n{0}	Un problème est survenu :\n\n{0}
+Azeem Bukhari	Azeem Bukhari
+less than a second	moins d'une seconde
+{0} h {1} min	{0} h {1} min
+{0} min {1} s	{0} min {1} s
+.jpg	.jpg
+{0} (edited){1}	{0} (edited){1}
+{0} (edited {1}){2}	{0} (edited {1}){2}
+photo	photo
+{0}.new	{0}.new
+System Volume Information	System Volume Information
+{0}.bak	{0}.bak
+A picture needs a size.	Une image a besoin d'une taille.
+The pixels don't match the size.	Les pixels ne correspondent pas à la taille.
+Theme	Thème
+Folders	Dossiers
+Missing theme resource {0}	Missing theme resource {0}
+Light	Clair
+Styles	Styles
+Dark	Sombre
+Application	Application
+New album	Nouvel album
+video videos	video videos
+photo photos picture pictures	photo photos picture pictures
+place location gps	place location gps
+Today	Aujourd'hui
+Yesterday	Hier
+Looking for photos and videos…	Recherche des photos et vidéos…
+Checking for new photos and videos…	Recherche de nouvelles photos et vidéos…
+Looking for photos and videos… {0} so far	Recherche des photos et vidéos… {0} jusqu'ici
+No folders chosen yet	Aucun dossier choisi pour l'instant
+Watching {0} · up to date	Surveillance de {0} · à jour
+Couldn't save stars, tags and albums: {0}	Impossible d'enregistrer les étoiles, mots-clés et albums : {0}
+Error message shown: {0}	Error message shown: {0}
+All files	Tous les fichiers
+Save	Enregistrer
+Cancel	Annuler
+Duplicates	Doublons
+Keep the best in every group	Garder la meilleure de chaque groupe
+The biggest (most pixels), and the one whose name doesn't look like a copy	La plus grande (le plus de pixels), et celle dont le nom ne ressemble pas à une copie
+Move the others to the Recycle Bin	Mettre les autres à la Corbeille
+Stop	Arrêter
+Getting photos ready to compare… {0} of {1}	Préparation des photos pour la comparaison… {0} sur {1}
+Looking for copies…	Recherche de copies…
+No copies found	Aucune copie trouvée
+{0} · {1} could be freed	{0} · {1} peuvent être libérés
+No copies found. Every photo and video here is different.	Aucune copie trouvée. Chaque photo et vidéo ici est différente.
+Move {0} ({1}) to the Recycle Bin?\n\nThe ticked copy of each stays. You can get the others back from the Recycle Bin.	Mettre {0} ({1}) à la Corbeille ?\n\nLa copie cochée de chacune reste. Vous pouvez récupérer les autres dans la Corbeille.
+Remove copies	Retirer les copies
+Moved {0} to the Recycle Bin	{0} mis à la Corbeille
+{0} couldn't be moved (in use, or Windows was asked to keep them).	{0} n'ont pas pu être déplacés (en cours d'utilisation, ou Windows doit les garder).
+{0}\n\nClick to keep or not keep this one	{0}\n\nCliquez pour garder ou non celle-ci
+Keep	Garder
+Exact copies	Copies exactes
+Same photo	Même photo
+Taken {0}	Prise {0}
+Not copies: leave these	Pas des copies : les laisser
+The picture couldn't be saved: {0}	Impossible d'enregistrer l'image : {0}
+Search names, tags, albums, folders, cameras, dates…	Rechercher noms, mots-clés, albums, dossiers, appareils, dates…
+Oldest first	Les plus anciennes d'abord
+Photos	Photos
+Videos	Vidéos
+Search	Rechercher
+Slideshow	Diaporama
+Show the photos here one after another, full screen (F5)	Montrer ces photos l'une après l'autre, en plein écran (F5)
+Export	Exporter
+Save copies to share: smaller, without the place, fixes included	Enregistrer des copies à partager : plus petites, sans le lieu, retouches comprises
+Folders…	Dossiers…
+Choose the folders KUDUPIX looks in	Choisir les dossiers où KUDUPIX regarde
+Settings	Paramètres
+About	À propos
+Picture size	Taille des images
+no folders yet	pas encore de dossiers
+KUDUPIX is looking for photos and videos in {0}. It only reads them: nothing is moved or changed.	KUDUPIX recherche des photos et vidéos dans {0}. Il les lit seulement : rien n'est déplacé ni modifié.
+Choose folders	Choisir des dossiers
+OK	OK
+{0} {1} is available	{0} {1} est disponible
+Library	Bibliothèque
+All photos and videos	Toutes les photos et vidéos
+Starred	Avec étoiles
+By month	Par mois
+People	Personnes
+Albums	Albums
+Rename…	Renommer…
+Remove the album (the photos stay)	Retirer l'album (les photos restent)
++  New album	+  Nouvel album
+Choose folders…	Choisir des dossiers…
+Tags	Mots-clés
+Faces and questions	Visages et questions
+Add to album	Ajouter à l'album
+Fix	Retoucher
+Open the photo to fix it (rotate, crop, colours, red-eye)	Ouvrir la photo pour la retoucher (pivoter, recadrer, couleurs, yeux rouges)
+Album	Album
+Tagged “{0}”	Avec le mot-clé « {0} »
+Person	Personne
+Search results	Résultats de la recherche
+{0} shown of {1}	{0} affichées sur {1}
+1 selected	1 sélectionnée
+{0} selected	{0} sélectionnées
+Select a photo or video to see its details, give it stars and tags, or add it to an album.\n\nDouble-click to open it. Ctrl+click or Shift+click to select more than one.	Sélectionnez une photo ou une vidéo pour voir ses détails, lui donner des étoiles et des mots-clés, ou l'ajouter à un album.\n\nDouble-cliquez pour l'ouvrir. Ctrl+clic ou Maj+clic pour en choisir plusieurs.
+Show it in File Explorer	L'afficher dans l'Explorateur de fichiers
+{0} · stars and tags go on all of them	{0} · les étoiles et mots-clés s'appliquent à toutes
+1 star	1 étoile
+{0} stars	{0} étoiles
+Stars	Étoiles
+Take this tag off	Retirer ce mot-clé
+New tag	Nouveau mot-clé
++ Add a tag	+ Ajouter un mot-clé
+Take it out of this album (the photo stays where it is)	La retirer de cet album (la photo reste où elle est)
++ Add to album	+ Ajouter à l'album
+Details	Détails
+Filmed	Filmée
+Taken	Prise
+Not stored in the file	Pas enregistré dans le fichier
+File date	Date du fichier
+Size	Taille
+Length	Durée
+Camera	Appareil
+Place	Lieu
+Show the place on a map	Montrer le lieu sur une carte
+Opens OpenStreetMap in your browser	Ouvre OpenStreetMap dans votre navigateur
+Select photos first	Sélectionnez d'abord des photos
+New album…	Nouvel album…
+Added {0} to “{1}”	{0} ajoutées à « {1} »
+A name for the album. Albums only point to your photos: nothing is moved or copied.	Un nom pour l'album. Les albums renvoient seulement à vos photos : rien n'est déplacé ni copié.
+Rename album	Renommer l'album
+A new name for the album.	Un nouveau nom pour l'album.
+Remove the album “{0}”?\n\nOnly the album goes: its {1} stay where they are.	Retirer l'album « {0} » ?\n\nSeul l'album part : ses {1} restent où ils sont.
+Open	Ouvrir
+Turn right	Pivoter à droite
+Turn left	Pivoter à gauche
+No stars	Aucune étoile
+Take out of this album	Retirer de cet album
+Export…	Exporter…
+Print…	Imprimer…
+Show in File Explorer	Afficher dans l'Explorateur de fichiers
+Copy the file path	Copier le chemin du fichier
+Move to the Recycle Bin…	Mettre à la Corbeille…
+Move {0} to the Recycle Bin…	Mettre {0} à la Corbeille…
+Move {0} to the Recycle Bin?\n\nYou can get {1} back from the Recycle Bin. Stars, tags and albums for {2} are forgotten.	Mettre {0} à la Corbeille ?\n\nVous pouvez récupérer {1} dans la Corbeille. Les étoiles, mots-clés et albums de {2} sont oubliés.
+{0} couldn't be moved to the Recycle Bin (in use, or Windows was asked to keep {1}):\n\n{2}	{0} n'ont pas pu être mis à la Corbeille (en cours d'utilisation, ou Windows doit garder {1}) :\n\n{2}
+There's nothing here to export. Select photos, or choose a part of the library with some in it.	Il n'y a rien à exporter ici. Sélectionnez des photos, ou choisissez une partie de la bibliothèque qui en contient.
+There are no photos here for a slideshow.	Il n'y a pas de photos ici pour un diaporama.
+Is this {0}? ({1})	Est-ce {0} ? ({1})
+Settings · KUDUPIX	Paramètres · KUDUPIX
+Folders KUDUPIX looks in	Dossiers où KUDUPIX regarde
+Photos and videos in these folders (and the folders inside them) are shown. They're only read: KUDUPIX never moves or changes them.	Les photos et vidéos de ces dossiers (et des dossiers qu'ils contiennent) sont affichées. Elles sont seulement lues : KUDUPIX ne les déplace ni ne les modifie jamais.
+Add a folder…	Ajouter un dossier…
+Add the usual ones (Pictures, Videos, OneDrive)	Ajouter les habituels (Images, Vidéos, OneDrive)
+Appearance	Apparence
+Same as Windows	Comme Windows
+Space KUDUPIX uses	Place utilisée par KUDUPIX
+Small pictures for the grid: {0}. They're made again when needed.	Petites images pour la grille : {0}. Elles sont refaites au besoin.
+Remove them	Les supprimer
+Originals kept before “Save over the original”: {0}, {1}.	Originaux gardés avant « Enregistrer par-dessus l'original » : {0}, {1}.
+Open the folder	Ouvrir le dossier
+Updates	Mises à jour
+Check for a new KUDUPIX version when it starts	Rechercher une nouvelle version de KUDUPIX au démarrage
+Only asks GitHub for the latest version number. Nothing is downloaded without asking.	Demande seulement à GitHub le numéro de la dernière version. Rien n'est téléchargé sans vous le demander.
+About KUDUPIX	À propos de KUDUPIX
+Close	Fermer
+No folders yet: add one.	Pas encore de dossiers : ajoutez-en un.
+(not there now)	(absent pour l'instant)
+Remove	Retirer
+Choose a folder with photos or videos	Choisissez un dossier avec des photos ou des vidéos
+KUDUPIX	KUDUPIX
+Version {0} · Your photos and videos, organised	Version {0} · Vos photos et vidéos, bien rangées
+Azeem, with Claude and	Azeem, with Claude and
+Made by	Made by
+Licence	Licence
+MIT · free and open source	MIT · libre et open source
+View	Voir
+Source code	Code source
+Pictures and videos	Images et vidéos
+Opened and played with Windows' own codecs and player	Ouvertes et lues avec les codecs et le lecteur de Windows
+Faces found and told apart on this PC with the YuNet (MIT) and SFace (Apache 2.0) models from OpenCV, run by ONNX Runtime (MIT)	Visages trouvés et distingués sur ce PC avec les modèles YuNet (MIT) et SFace (Apache 2.0) d'OpenCV, exécutés par ONNX Runtime (MIT)
+Third-party	Tiers
+Third-party notices	Mentions des tiers
+KUDUPIX works on your computer only. Your photos, videos and the faces in them never leave it, and it never changes them unless you choose “Save over the original” (which keeps the untouched photo first). The internet is used only to check for a new version, and to open a map when you ask.	KUDUPIX fonctionne uniquement sur votre ordinateur. Vos photos, vos vidéos et les visages qu'elles contiennent ne le quittent jamais, et il ne les modifie jamais sauf si vous choisissez « Enregistrer par-dessus l'original » (qui garde d'abord la photo intacte). Internet ne sert qu'à rechercher une nouvelle version et à ouvrir une carte quand vous le demandez.
+Check for updates	Rechercher des mises à jour
+Couldn't find any published version yet.	Aucune version publiée trouvée pour l'instant.
+KUDUPIX {0} is available. Open the download page?	KUDUPIX {0} est disponible. Ouvrir la page de téléchargement ?
+You have the latest version.	Vous avez la dernière version.
+Couldn't check for updates. Check your internet connection and try again.	Impossible de rechercher les mises à jour. Vérifiez votre connexion internet et réessayez.
+Leave out where the photos were taken	Retirer le lieu où les photos ont été prises
+The size it is	Sa taille actuelle
+Large (2048 pixels)	Grande (2048 pixels)
+Medium (1600 pixels)	Moyenne (1600 pixels)
+Small (1024 pixels)	Petite (1024 pixels)
+For email (640 pixels)	Pour un e-mail (640 pixels)
+Export · KUDUPIX	Exporter · KUDUPIX
+{0} and {1}	{0} et {1}
+Copies of {0}, to share or keep elsewhere. Photos get their fixes; videos are copied as they are. The originals stay as they are.	Copies de {0}, à partager ou garder ailleurs. Les photos ont leurs retouches ; les vidéos sont copiées telles quelles. Les originaux ne changent pas.
+Photo size (the longest side)	Taille de la photo (le plus grand côté)
+Best	Meilleure
+Good (smaller files)	Bonne (fichiers plus petits)
+Smallest files	Fichiers les plus petits
+Quality	Qualité
+Phones store where each photo was taken. Leaving it out is safer when sharing.	Les téléphones enregistrent où chaque photo a été prise. Le retirer est plus sûr pour partager.
+Save them in	Les enregistrer dans
+KUDUPIX export	KUDUPIX export
+Choose…	Choisir…
+Where to save the copies	Où enregistrer les copies
+Stopped: {0} saved.	Arrêté : {0} enregistrées.
+Saved {0} in {1}.{2}	{0} enregistrées dans {1}.{2}
+ {0} couldn't be saved: {1}	 {0} n'ont pas pu être enregistrées : {1}
+No folder chosen	Aucun dossier choisi
+Saving {0} of {1}: {2}	Enregistrement {0} sur {1} : {2}
+Slideshow · KUDUPIX	Diaporama · KUDUPIX
+·  paused	·  en pause
+{2}  ·  {0} of {1}	{2}  ·  {0} sur {1}
+These photos couldn't be opened for printing.\n\n{0}	Ces photos n'ont pas pu être ouvertes pour l'impression.\n\n{0}
+KUDUPIX photos	KUDUPIX photos
+Looking for people in your photos… {0} of {1}. You can name people already.	Recherche de personnes dans vos photos… {0} sur {1}. Vous pouvez déjà nommer des personnes.
+Faces are looked for on this PC only; nothing is sent anywhere. Only faces big enough to tell who it is are grouped.	Les visages sont cherchés sur ce PC uniquement ; rien n'est envoyé nulle part. Seuls les visages assez grands pour savoir qui c'est sont regroupés.
+Some faces might be people you've named. Have a look:	Certains visages pourraient être des personnes que vous avez nommées. Jetez un œil :
+People you've named	Personnes nommées
+(hidden)	(masquée)
+Who is this?	Qui est-ce ?
+Groups of faces appear here as photos are looked at.	Des groupes de visages apparaissent ici au fil de l'examen des photos.
+No more groups of faces to name.	Plus de groupes de visages à nommer.
+The same face seen in more than one photo. Click a group to name it.	Le même visage vu sur plusieurs photos. Cliquez sur un groupe pour le nommer.
+Don't show hidden people	Ne pas montrer les personnes masquées
+Show hidden people ({0})	Montrer les personnes masquées ({0})
+‹ People	‹ Personnes
+Type their name. If one of these isn't the same person, click it to leave it out.	Tapez son nom. Si l'un de ces visages n'est pas la même personne, cliquez dessus pour l'écarter.
+Name them	Les nommer
+Left out	Écarté
+Named {0} “{1}”	{0} nommé « {1} »
+Name	Nom
+hidden	masquée
+See their photos	Voir ses photos
+Show in People	Montrer dans Personnes
+Hide	Masquer
+The same person as…	La même personne que…
+Forget this person	Oublier cette personne
+Is this {0}?	Est-ce {0} ?
+These faces look a little like them. Say yes or no; it helps with the rest.	Ces visages lui ressemblent un peu. Dites oui ou non ; cela aide pour le reste.
+Yes	Oui
+No	Non
+Faces of {0}	Visages de {0}
+Right-click a face that isn't them.	Clic droit sur un visage qui n'est pas le sien.
+Found by itself	Trouvé tout seul
+Rename	Renommer
+A new name. If someone already has it, the two become one person.	Un nouveau nom. Si quelqu'un le porte déjà, les deux deviennent une seule personne.
+{0} and {1} are the same person? Their faces are put together under “{2}”.	{0} et {1} sont la même personne ? Leurs visages sont réunis sous « {2} ».
+No one else is named yet	Personne d'autre n'est encore nommé
+Forget “{0}”? Their photos stay; their faces go back to “Who is this?”.	Oublier « {0} » ? Ses photos restent ; ses visages retournent dans « Qui est-ce ? ».
+This is {0}	C'est {0}
+This is someone else…	C'est quelqu'un d'autre…
+Their name.	Son nom.
+Not {0}	Pas {0}
+Not a face	Pas un visage
+The face models aren't next to KUDUPIX (install it again to get them).	Les modèles de visages ne sont pas à côté de KUDUPIX (réinstallez-le pour les avoir).
+People can't work on this PC: {0}	Personnes ne peut pas fonctionner sur ce PC : {0}
+KUDUPIX faces	KUDUPIX faces
+Looking for people… {0} of {1} photos	Recherche de personnes… {0} sur {1} photos
+Photos and videos	Photos et vidéos
+Video	Vidéo
+Fixed in KUDUPIX (the file itself isn't changed until you save)	Retouchée dans KUDUPIX (le fichier ne change pas avant l'enregistrement)
+{0} ran into a problem it couldn't get past, and has to close.	{0} a rencontré un problème qu'il n'a pas pu surmonter et doit se fermer.
+KUDUPIX thumbnails	KUDUPIX thumbnails
+{0}.jpg	{0}.jpg
+Hide faces	Masquer les visages
+Show faces	Montrer les visages
+With {0}	Avec {0}
+Faces show on the photo as it was taken: undo turning, straightening and cropping to see them.	Les visages s'affichent sur la photo telle qu'elle a été prise : annulez la rotation, le redressement et le recadrage pour les voir.
+Back to photos	Retour aux photos
+Esc	Esc
+A frame round each face, with who it is. Click a frame to name it or fix it.	Un cadre autour de chaque visage, avec qui c'est. Cliquez sur un cadre pour le nommer ou le corriger.
+Delete	Supprimer
+Move to the Recycle Bin (Delete)	Mettre à la Corbeille (Suppr)
+Previous (Left arrow)	Précédente (flèche gauche)
+Next (Right arrow)	Suivante (flèche droite)
+Play or pause (Space)	Lire ou mettre en pause (Espace)
+Position in the video	Position dans la vidéo
+Sound on or off	Son activé ou coupé
+unknown	inconnu
+Windows can't play this video here (it may need a codec Windows doesn't have).\nDouble-click the file in File Explorer to play it with another player.	Windows ne peut pas lire cette vidéo ici (il lui manque peut-être un codec).\nDouble-cliquez sur le fichier dans l'Explorateur de fichiers pour la lire avec un autre lecteur.
+Windows can't open this picture (it may need a codec, such as the HEIF one from the Microsoft Store, for HEIC photos).	Windows ne peut pas ouvrir cette image (il faut peut-être un codec, comme celui HEIF du Microsoft Store pour les photos HEIC).
+{0} (key {1})	{0} (touche {1})
+Saving a copy…	Enregistrement d'une copie…
+The copy couldn't be saved.\n\n{0}	La copie n'a pas pu être enregistrée.\n\n{0}
+The copy wasn't saved	La copie n'a pas été enregistrée
+Saved as {0}	Enregistrée sous {0}
+Save the fixes into “{0}” itself?\n\nKUDUPIX first keeps the untouched photo in its own folder, so you can put it back later (“Put the original back”). The photo keeps its date and details.	Enregistrer les retouches dans « {0} » même ?\n\nKUDUPIX garde d'abord la photo intacte dans son propre dossier, pour pouvoir la remettre plus tard (« Remettre l'original »). La photo garde sa date et ses détails.
+Save over the original	Enregistrer par-dessus l'original
+Saving…	Enregistrement…
+The photo couldn't be saved; it's unchanged.\n\n{0}	La photo n'a pas pu être enregistrée ; elle n'a pas changé.\n\n{0}
+Not saved	Non enregistrée
+Saved into {0} (the original is kept)	Enregistrée dans {0} (l'original est gardé)
+Put back the original of “{0}”, as it was before you saved over it on {1}?\n\nThe fixes saved into it go.	Remettre l'original de « {0} », tel qu'il était avant d'être remplacé le {1} ?\n\nLes retouches enregistrées dedans partent.
+Put the original back	Remettre l'original
+The original couldn't be put back.\n\n{0}	L'original n'a pas pu être remis.\n\n{0}
+The original of {0} is back	L'original de {0} est revenu
+Fix this photo	Retoucher cette photo
+The file stays as it is until you save. Your fixes are kept in KUDUPIX, so you can change them later.	Le fichier reste tel quel jusqu'à l'enregistrement. Vos retouches sont gardées dans KUDUPIX, vous pouvez donc les changer plus tard.
+Auto-fix	Retouche auto
+Brightness and colours in one click (click again to undo)	Luminosité et couleurs en un clic (cliquez à nouveau pour annuler)
+Crop	Recadrer
+Drag the corners or edges of the frame; drag inside it to move it	Faites glisser les coins ou les bords du cadre ; glissez à l'intérieur pour le déplacer
+A quarter turn to the left ([)	Un quart de tour à gauche ([)
+A quarter turn to the right (])	Un quart de tour à droite (])
+Straighten	Redresser
+Level a sloping horizon	Remettre d'aplomb un horizon penché
+Red-eye	Yeux rouges
+Click on each red eye in the photo	Cliquez sur chaque œil rouge de la photo
+Done cropping	Recadrage terminé
+Whole photo	Photo entière
+Click on each red eye in the photo. Click Red-eye again when you're done.	Cliquez sur chaque œil rouge de la photo. Recliquez sur Yeux rouges quand c'est fini.
+Undo the red-eye fixes ({0})	Annuler les retouches des yeux rouges ({0})
+Double-click to put it back to 0	Double-cliquez pour revenir à 0
+Brightness	Luminosité
+Contrast	Contraste
+Warmth	Chaleur
+Colour	Couleur
+Undo all the fixes	Annuler toutes les retouches
+Save a copy	Enregistrer une copie
+Save over the original…	Enregistrer par-dessus l'original…
+Windows can't write {0} photos; save a copy instead (it's saved as JPEG).	Windows ne sait pas écrire les photos {0} ; enregistrez plutôt une copie (en JPEG).
+“Save a copy” makes {0} next to the photo. “Save over the original” asks first and keeps the untouched photo, so you can put it back later.	« Enregistrer une copie » crée {0} à côté de la photo. « Enregistrer par-dessus l'original » demande d'abord et garde la photo intacte, pour pouvoir la remettre plus tard.
+Put the original back (saved over on {0})	Remettre l'original (remplacé le {0})
+Videos play here with Windows' own player. Stars, tags and albums work for videos too; fixes are for photos.	Les vidéos se lisent ici avec le lecteur de Windows. Étoiles, mots-clés et albums marchent aussi pour les vidéos ; les retouches sont pour les photos.
+Back to the fixes	Retour aux retouches
+{0} item	{0} élément
+{0} items	{0} éléments
+{0} folder	{0} dossier
+{0} folders	{0} dossiers
+{0} group	{0} groupe
+{0} groups	{0} groupes
+{0} copy	{0} copie
+{0} copies	{0} copies
+{0} file	{0} fichier
+{0} files	{0} fichiers
+{0} photo	{0} photo
+{0} photos	{0} photos
+{0} video	{0} vidéo
+{0} videos	{0} vidéos
+{0} face	{0} visage
+{0} faces	{0} visages

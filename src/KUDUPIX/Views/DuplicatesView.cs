@@ -261,7 +261,7 @@ namespace Kudupix.Views
                 name.TextTrimming = TextTrimming.CharacterEllipsis;
                 name.MaxWidth = 240;
                 name.HorizontalAlignment = HorizontalAlignment.Center;
-                var size = Ui.Subtle((keep ? "Keep · " : string.Empty) + (item.ShownWidth > 0 ? $"{item.ShownWidth} × {item.ShownHeight} · " : string.Empty) + Format.Size(item.Size), 11, false);
+                var size = Ui.Subtle((keep ? Lang.T("Keep") + " · " : string.Empty) + (item.ShownWidth > 0 ? $"{item.ShownWidth} × {item.ShownHeight} · " : string.Empty) + Format.Size(item.Size), 11, false);
                 size.HorizontalAlignment = HorizontalAlignment.Center;
                 var col = new StackPanel { Width = 250 };
                 col.Children.Add(pic);

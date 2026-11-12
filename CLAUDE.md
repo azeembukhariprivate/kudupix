@@ -66,6 +66,11 @@ out\KUDUPIX\KUDUPIX.exe --self-test --samples tests\KUDUPIX.Tests\samples-cache 
 - The internet is only used for the update check and when the person clicks "Show the place on a map" (OpenStreetMap in
   the browser). Never add anything that sends data about the user.
 
+- Other languages (1.2): the shared `Lang`/`LangUi` (kudu-common) put each window into the chosen language as it's shown.
+  Texts are in `src/KUDUPIX/Lang/<code>.txt`, made and checked with kudu-common's `tools/lang.py`; texts put together
+  from pieces call `Lang.T` on each piece. When adding or changing a text, add it to every language file
+  (`tools/lang.py check ../kudupix`).
+
 ## Shared code (kudu-common)
 
 The files listed in `.kudu-common` (the look and controls in `Controls/`, `Core/Admin.cs`, `AppInfo.cs`, `Args.cs`,

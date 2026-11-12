@@ -106,7 +106,7 @@ namespace Kudupix.Views
                 {
                     var person = p;
                     var faces = g.FacesOf(p);
-                    var tile = Tile(faces.FirstOrDefault(id => p.Faces.Contains(id)) ?? faces.FirstOrDefault(), p.Name + (p.Hidden ? " (hidden)" : string.Empty), Format.Count(Work.PhotoCount(p), "photo"),
+                    var tile = Tile(faces.FirstOrDefault(id => p.Faces.Contains(id)) ?? faces.FirstOrDefault(), p.Name + (p.Hidden ? " " + Lang.T("(hidden)") : string.Empty), Format.Count(Work.PhotoCount(p), "photo"),
                         () => _main.Go(ViewKind.Person, person.Id));
                     tile.ContextMenu = PersonMenu(person);
                     wrap.Children.Add(tile);
@@ -209,7 +209,7 @@ namespace Kudupix.Views
             var faces = Work.Groups.FacesOf(p);
             var head = Ui.Columns(Ui.Auto, Ui.Star());
             head.Children.Add(Round(faces.FirstOrDefault(id => p.Faces.Contains(id)) ?? faces.FirstOrDefault(), 64).At(0, 0));
-            head.Children.Add(Ui.Column(Ui.Text(p.Name, 18, bold: true), Ui.Subtle(Format.Count(Work.PhotoCount(p), "photo") + (p.Hidden ? " · hidden" : string.Empty), 12.5)).Margin(14, 0, 0, 0).At(0, 1));
+            head.Children.Add(Ui.Column(Ui.Text(p.Name, 18, bold: true), Ui.Subtle(Format.Count(Work.PhotoCount(p), "photo") + (p.Hidden ? " · " + Lang.T("hidden") : string.Empty), 12.5)).Margin(14, 0, 0, 0).At(0, 1));
             ((FrameworkElement)head.Children[1]).VerticalAlignment = VerticalAlignment.Center;
             _content.Children.Add(head.Margin(0, 8, 0, 10));
             var buttons = new WrapPanel();

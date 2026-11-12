@@ -27,6 +27,7 @@
 - **Duplicates**: finds copies of the same photo or video, including photos saved smaller or sent through messaging apps. The best copy of each is ticked to keep (you can change it); the others go to the Recycle Bin, so they can be brought back.
 - **Export**: copies to share, made smaller if you like, with your fixes, and without where the photos were taken (you choose). Videos are copied as they are.
 - **Slideshow and printing**: full-screen slideshows that fade from one photo to the next (F5), and printing a photo per page.
+- **In your language**: English, Malayalam (മലയാളം), Hindi (हिन्दी), Spanish, French and Arabic (with the windows mirrored for right-to-left). KUDUPIX starts in the same language as Windows when it has it; choose another in Settings.
 - **Never changes your files** unless you ask: everything KUDUPIX adds is kept in its own folder.
 - Light and dark themes, following Windows.
 

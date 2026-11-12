@@ -1,0 +1,341 @@
+KUDUPIX is already open.	KUDUPIX पहले से खुला है।
+Something went wrong:\n\n{0}	कुछ गड़बड़ हो गई:\n\n{0}
+Azeem Bukhari	Azeem Bukhari
+less than a second	एक सेकंड से कम
+{0} h {1} min	{0} घंटे {1} मिनट
+{0} min {1} s	{0} मिनट {1} सेकंड
+.jpg	.jpg
+{0} (edited){1}	{0} (edited){1}
+{0} (edited {1}){2}	{0} (edited {1}){2}
+photo	photo
+{0}.new	{0}.new
+System Volume Information	System Volume Information
+{0}.bak	{0}.bak
+A picture needs a size.	चित्र का आकार होना चाहिए।
+The pixels don't match the size.	पिक्सेल आकार से मेल नहीं खाते।
+Theme	थीम
+Folders	फ़ोल्डर
+Missing theme resource {0}	Missing theme resource {0}
+Light	हल्का
+Styles	Styles
+Dark	गहरा
+Application	Application
+New album	नया एल्बम
+video videos	video videos
+photo photos picture pictures	photo photos picture pictures
+place location gps	place location gps
+Today	आज
+Yesterday	कल
+Looking for photos and videos…	फ़ोटो और वीडियो ढूँढे जा रहे हैं…
+Checking for new photos and videos…	नए फ़ोटो और वीडियो देखे जा रहे हैं…
+Looking for photos and videos… {0} so far	फ़ोटो और वीडियो ढूँढे जा रहे हैं… अब तक {0}
+No folders chosen yet	अभी तक कोई फ़ोल्डर नहीं चुना गया
+Watching {0} · up to date	{0} पर नज़र · ताज़ा
+Couldn't save stars, tags and albums: {0}	स्टार, टैग और एल्बम सहेजे नहीं जा सके: {0}
+Error message shown: {0}	Error message shown: {0}
+All files	सभी फ़ाइलें
+Save	सहेजें
+Cancel	रद्द करें
+Duplicates	डुप्लिकेट
+Keep the best in every group	हर समूह में सबसे अच्छा रखें
+The biggest (most pixels), and the one whose name doesn't look like a copy	सबसे बड़ा (सबसे ज़्यादा पिक्सेल), और वह जिसका नाम कॉपी जैसा न लगे
+Move the others to the Recycle Bin	बाकी को रीसायकल बिन में भेजें
+Stop	रोकें
+Getting photos ready to compare… {0} of {1}	तुलना के लिए फ़ोटो तैयार हो रहे हैं… {0} / {1}
+Looking for copies…	कॉपी ढूँढी जा रही हैं…
+No copies found	कोई कॉपी नहीं मिली
+{0} · {1} could be freed	{0} · {1} खाली हो सकता है
+No copies found. Every photo and video here is different.	कोई कॉपी नहीं मिली। यहाँ हर फ़ोटो और वीडियो अलग है।
+Move {0} ({1}) to the Recycle Bin?\n\nThe ticked copy of each stays. You can get the others back from the Recycle Bin.	{0} ({1}) को रीसायकल बिन में भेजें?\n\nहर एक की टिक की गई कॉपी रहेगी। बाकी को रीसायकल बिन से वापस ला सकते हैं।
+Remove copies	कॉपी हटाएँ
+Moved {0} to the Recycle Bin	{0} को रीसायकल बिन में भेजा गया
+{0} couldn't be moved (in use, or Windows was asked to keep them).	{0} को हटाया नहीं जा सका (इस्तेमाल में है, या Windows से इन्हें रखने को कहा गया है)।
+{0}\n\nClick to keep or not keep this one	{0}\n\nइसे रखने या न रखने के लिए क्लिक करें
+Keep	रखें
+Exact copies	हूबहू कॉपी
+Same photo	वही फ़ोटो
+Taken {0}	लिया गया {0}
+Not copies: leave these	कॉपी नहीं: इन्हें छोड़ दें
+The picture couldn't be saved: {0}	चित्र सहेजा नहीं जा सका: {0}
+Search names, tags, albums, folders, cameras, dates…	नाम, टैग, एल्बम, फ़ोल्डर, कैमरे, तारीखें खोजें…
+Oldest first	पुराने पहले
+Photos	फ़ोटो
+Videos	वीडियो
+Search	खोजें
+Slideshow	स्लाइड शो
+Show the photos here one after another, full screen (F5)	यहाँ के फ़ोटो एक के बाद एक, पूरी स्क्रीन पर दिखाएँ (F5)
+Export	निर्यात करें
+Save copies to share: smaller, without the place, fixes included	साझा करने के लिए कॉपी सहेजें: छोटी, बिना जगह के, सुधारों के साथ
+Folders…	फ़ोल्डर…
+Choose the folders KUDUPIX looks in	वे फ़ोल्डर चुनें जिनमें KUDUPIX देखता है
+Settings	सेटिंग्स
+About	जानकारी
+Picture size	चित्र का आकार
+no folders yet	अभी कोई फ़ोल्डर नहीं
+KUDUPIX is looking for photos and videos in {0}. It only reads them: nothing is moved or changed.	KUDUPIX {0} में फ़ोटो और वीडियो ढूँढ रहा है। वह केवल उन्हें पढ़ता है: कुछ भी खिसकाया या बदला नहीं जाता।
+Choose folders	फ़ोल्डर चुनें
+OK	ठीक है
+{0} {1} is available	{0} {1} उपलब्ध है
+Library	संग्रह
+All photos and videos	सभी फ़ोटो और वीडियो
+Starred	स्टार वाले
+By month	महीने के अनुसार
+People	लोग
+Albums	एल्बम
+Rename…	नाम बदलें…
+Remove the album (the photos stay)	एल्बम हटाएँ (फ़ोटो रहेंगे)
++  New album	+  नया एल्बम
+Choose folders…	फ़ोल्डर चुनें…
+Tags	टैग
+Faces and questions	चेहरे और सवाल
+Add to album	एल्बम में जोड़ें
+Fix	सुधारें
+Open the photo to fix it (rotate, crop, colours, red-eye)	सुधारने के लिए फ़ोटो खोलें (घुमाएँ, काटें, रंग, लाल आँख)
+Album	एल्बम
+Tagged “{0}”	“{0}” टैग वाले
+Person	व्यक्ति
+Search results	खोज के नतीजे
+{0} shown of {1}	{1} में से {0} दिखाए गए
+1 selected	1 चुना गया
+{0} selected	{0} चुने गए
+Select a photo or video to see its details, give it stars and tags, or add it to an album.\n\nDouble-click to open it. Ctrl+click or Shift+click to select more than one.	फ़ोटो या वीडियो का विवरण देखने, उसे स्टार और टैग देने, या एल्बम में जोड़ने के लिए उसे चुनें।\n\nखोलने के लिए डबल-क्लिक करें। एक से ज़्यादा चुनने के लिए Ctrl+क्लिक या Shift+क्लिक करें।
+Show it in File Explorer	फ़ाइल एक्सप्लोरर में दिखाएँ
+{0} · stars and tags go on all of them	{0} · स्टार और टैग सभी पर लगते हैं
+1 star	1 स्टार
+{0} stars	{0} स्टार
+Stars	स्टार
+Take this tag off	यह टैग हटाएँ
+New tag	नया टैग
++ Add a tag	+ टैग जोड़ें
+Take it out of this album (the photo stays where it is)	इस एल्बम से निकालें (फ़ोटो अपनी जगह रहेगा)
++ Add to album	+ एल्बम में जोड़ें
+Details	विवरण
+Filmed	फ़िल्माया गया
+Taken	लिया गया
+Not stored in the file	फ़ाइल में नहीं रखा गया
+File date	फ़ाइल की तारीख
+Size	आकार
+Length	लंबाई
+Camera	कैमरा
+Place	जगह
+Show the place on a map	जगह नक्शे पर दिखाएँ
+Opens OpenStreetMap in your browser	आपके ब्राउज़र में OpenStreetMap खोलता है
+Select photos first	पहले फ़ोटो चुनें
+New album…	नया एल्बम…
+Added {0} to “{1}”	{0} को “{1}” में जोड़ा गया
+A name for the album. Albums only point to your photos: nothing is moved or copied.	एल्बम का नाम। एल्बम केवल आपके फ़ोटो की ओर इशारा करते हैं: कुछ भी खिसकाया या कॉपी नहीं होता।
+Rename album	एल्बम का नाम बदलें
+A new name for the album.	एल्बम का नया नाम।
+Remove the album “{0}”?\n\nOnly the album goes: its {1} stay where they are.	एल्बम “{0}” हटाएँ?\n\nकेवल एल्बम जाएगा: उसके {1} अपनी जगह रहेंगे।
+Open	खोलें
+Turn right	दाएँ घुमाएँ
+Turn left	बाएँ घुमाएँ
+No stars	कोई स्टार नहीं
+Take out of this album	इस एल्बम से निकालें
+Export…	निर्यात करें…
+Print…	प्रिंट करें…
+Show in File Explorer	फ़ाइल एक्सप्लोरर में दिखाएँ
+Copy the file path	फ़ाइल का पथ कॉपी करें
+Move to the Recycle Bin…	रीसायकल बिन में भेजें…
+Move {0} to the Recycle Bin…	{0} को रीसायकल बिन में भेजें…
+Move {0} to the Recycle Bin?\n\nYou can get {1} back from the Recycle Bin. Stars, tags and albums for {2} are forgotten.	{0} को रीसायकल बिन में भेजें?\n\n{1} को रीसायकल बिन से वापस ला सकते हैं। {2} के स्टार, टैग और एल्बम भुला दिए जाएँगे।
+{0} couldn't be moved to the Recycle Bin (in use, or Windows was asked to keep {1}):\n\n{2}	{0} को रीसायकल बिन में नहीं भेजा जा सका (इस्तेमाल में है, या Windows से {1} रखने को कहा गया है):\n\n{2}
+There's nothing here to export. Select photos, or choose a part of the library with some in it.	यहाँ निर्यात करने को कुछ नहीं है। फ़ोटो चुनें, या संग्रह का ऐसा हिस्सा चुनें जिसमें फ़ोटो हों।
+There are no photos here for a slideshow.	यहाँ स्लाइड शो के लिए कोई फ़ोटो नहीं है।
+Is this {0}? ({1})	क्या यह {0} है? ({1})
+Settings · KUDUPIX	सेटिंग्स · KUDUPIX
+Folders KUDUPIX looks in	वे फ़ोल्डर जिनमें KUDUPIX देखता है
+Photos and videos in these folders (and the folders inside them) are shown. They're only read: KUDUPIX never moves or changes them.	इन फ़ोल्डरों (और इनके अंदर के फ़ोल्डरों) के फ़ोटो और वीडियो दिखाए जाते हैं। वे केवल पढ़े जाते हैं: KUDUPIX उन्हें कभी खिसकाता या बदलता नहीं।
+Add a folder…	फ़ोल्डर जोड़ें…
+Add the usual ones (Pictures, Videos, OneDrive)	आम वाले जोड़ें (Pictures, Videos, OneDrive)
+Appearance	रूप
+Same as Windows	Windows जैसा ही
+Space KUDUPIX uses	KUDUPIX द्वारा इस्तेमाल की जगह
+Small pictures for the grid: {0}. They're made again when needed.	ग्रिड के लिए छोटे चित्र: {0}। ज़रूरत पड़ने पर फिर बनते हैं।
+Remove them	इन्हें हटाएँ
+Originals kept before “Save over the original”: {0}, {1}.	“मूल के ऊपर सहेजें” से पहले रखे गए मूल: {0}, {1}।
+Open the folder	फ़ोल्डर खोलें
+Updates	अपडेट
+Check for a new KUDUPIX version when it starts	शुरू होने पर KUDUPIX का नया संस्करण जाँचें
+Only asks GitHub for the latest version number. Nothing is downloaded without asking.	GitHub से केवल नवीनतम संस्करण संख्या पूछी जाती है। बिना पूछे कुछ भी डाउनलोड नहीं होता।
+About KUDUPIX	KUDUPIX के बारे में
+Close	बंद करें
+No folders yet: add one.	अभी कोई फ़ोल्डर नहीं: एक जोड़ें।
+(not there now)	(अभी वहाँ नहीं)
+Remove	हटाएँ
+Choose a folder with photos or videos	फ़ोटो या वीडियो वाला फ़ोल्डर चुनें
+KUDUPIX	KUDUPIX
+Version {0} · Your photos and videos, organised	संस्करण {0} · आपके फ़ोटो और वीडियो, व्यवस्थित
+Azeem, with Claude and	Azeem, with Claude and
+Made by	Made by
+Licence	लाइसेंस
+MIT · free and open source	MIT · मुफ़्त और ओपन सोर्स
+View	देखें
+Source code	सोर्स कोड
+Pictures and videos	चित्र और वीडियो
+Opened and played with Windows' own codecs and player	Windows के अपने कोडेक और प्लेयर से खोले और चलाए जाते हैं
+Faces found and told apart on this PC with the YuNet (MIT) and SFace (Apache 2.0) models from OpenCV, run by ONNX Runtime (MIT)	चेहरे इसी पीसी पर OpenCV के YuNet (MIT) और SFace (Apache 2.0) मॉडलों से ढूँढे और पहचाने जाते हैं, जिन्हें ONNX Runtime (MIT) चलाता है
+Third-party	तीसरे पक्ष के
+Third-party notices	तीसरे पक्ष की सूचनाएँ
+KUDUPIX works on your computer only. Your photos, videos and the faces in them never leave it, and it never changes them unless you choose “Save over the original” (which keeps the untouched photo first). The internet is used only to check for a new version, and to open a map when you ask.	KUDUPIX केवल आपके कंप्यूटर पर काम करता है। आपके फ़ोटो, वीडियो और उनमें के चेहरे इससे बाहर नहीं जाते, और यह उन्हें तब तक नहीं बदलता जब तक आप “मूल के ऊपर सहेजें” न चुनें (जो पहले अनछुआ फ़ोटो रख लेता है)। इंटरनेट केवल नया संस्करण जाँचने और आपके कहने पर नक्शा खोलने के लिए इस्तेमाल होता है।
+Check for updates	अपडेट जाँचें
+Couldn't find any published version yet.	अभी तक कोई प्रकाशित संस्करण नहीं मिला।
+KUDUPIX {0} is available. Open the download page?	KUDUPIX {0} उपलब्ध है। डाउनलोड पेज खोलें?
+You have the latest version.	आपके पास नवीनतम संस्करण है।
+Couldn't check for updates. Check your internet connection and try again.	अपडेट जाँचे नहीं जा सके। अपना इंटरनेट कनेक्शन जाँचें और फिर से कोशिश करें।
+Leave out where the photos were taken	फ़ोटो कहाँ लिए गए, यह छोड़ दें
+The size it is	जैसा आकार है
+Large (2048 pixels)	बड़ा (2048 पिक्सेल)
+Medium (1600 pixels)	मध्यम (1600 पिक्सेल)
+Small (1024 pixels)	छोटा (1024 पिक्सेल)
+For email (640 pixels)	ईमेल के लिए (640 पिक्सेल)
+Export · KUDUPIX	निर्यात · KUDUPIX
+{0} and {1}	{0} और {1}
+Copies of {0}, to share or keep elsewhere. Photos get their fixes; videos are copied as they are. The originals stay as they are.	{0} की कॉपी, साझा करने या कहीं और रखने के लिए। फ़ोटो में उनके सुधार होते हैं; वीडियो जैसे हैं वैसे कॉपी होते हैं। मूल जैसे हैं वैसे रहते हैं।
+Photo size (the longest side)	फ़ोटो का आकार (लंबी भुजा)
+Best	सबसे अच्छा
+Good (smaller files)	अच्छा (छोटी फ़ाइलें)
+Smallest files	सबसे छोटी फ़ाइलें
+Quality	गुणवत्ता
+Phones store where each photo was taken. Leaving it out is safer when sharing.	फ़ोन हर फ़ोटो के साथ उसकी जगह रखते हैं। साझा करते समय इसे छोड़ना ज़्यादा सुरक्षित है।
+Save them in	यहाँ सहेजें
+KUDUPIX export	KUDUPIX export
+Choose…	चुनें…
+Where to save the copies	कॉपी कहाँ सहेजें
+Stopped: {0} saved.	रोका गया: {0} सहेजे गए।
+Saved {0} in {1}.{2}	{1} में {0} सहेजे गए।{2}
+ {0} couldn't be saved: {1}	 {0} सहेजे नहीं जा सके: {1}
+No folder chosen	कोई फ़ोल्डर नहीं चुना गया
+Saving {0} of {1}: {2}	{0} / {1} सहेजा जा रहा है: {2}
+Slideshow · KUDUPIX	स्लाइड शो · KUDUPIX
+·  paused	·  रुका हुआ
+{2}  ·  {0} of {1}	{2}  ·  {0} / {1}
+These photos couldn't be opened for printing.\n\n{0}	ये फ़ोटो प्रिंट के लिए खोले नहीं जा सके।\n\n{0}
+KUDUPIX photos	KUDUPIX photos
+Looking for people in your photos… {0} of {1}. You can name people already.	आपके फ़ोटो में लोग ढूँढे जा रहे हैं… {0} / {1}। आप अभी से लोगों के नाम रख सकते हैं।
+Faces are looked for on this PC only; nothing is sent anywhere. Only faces big enough to tell who it is are grouped.	चेहरे केवल इसी पीसी पर ढूँढे जाते हैं; कुछ भी कहीं नहीं भेजा जाता। केवल इतने बड़े चेहरे समूह में आते हैं जिनसे पहचान हो सके।
+Some faces might be people you've named. Have a look:	कुछ चेहरे आपके नाम रखे लोग हो सकते हैं। एक नज़र डालें:
+People you've named	जिन लोगों के आपने नाम रखे
+(hidden)	(छिपा हुआ)
+Who is this?	यह कौन है?
+Groups of faces appear here as photos are looked at.	जैसे-जैसे फ़ोटो देखे जाते हैं, चेहरों के समूह यहाँ आते हैं।
+No more groups of faces to name.	नाम रखने को चेहरों का कोई और समूह नहीं।
+The same face seen in more than one photo. Click a group to name it.	एक से ज़्यादा फ़ोटो में दिखा एक ही चेहरा। नाम रखने के लिए किसी समूह पर क्लिक करें।
+Don't show hidden people	छिपे लोग न दिखाएँ
+Show hidden people ({0})	छिपे लोग दिखाएँ ({0})
+‹ People	‹ लोग
+Type their name. If one of these isn't the same person, click it to leave it out.	उनका नाम लिखें। अगर इनमें से कोई वही व्यक्ति नहीं है, तो उसे छोड़ने के लिए उस पर क्लिक करें।
+Name them	नाम रखें
+Left out	छोड़ा गया
+Named {0} “{1}”	{0} का नाम “{1}” रखा गया
+Name	नाम
+hidden	छिपा हुआ
+See their photos	उनके फ़ोटो देखें
+Show in People	लोग में दिखाएँ
+Hide	छिपाएँ
+The same person as…	वही व्यक्ति जो…
+Forget this person	इस व्यक्ति को भूल जाएँ
+Is this {0}?	क्या यह {0} है?
+These faces look a little like them. Say yes or no; it helps with the rest.	ये चेहरे उनसे थोड़े मिलते हैं। हाँ या ना कहें; इससे बाकी में मदद मिलती है।
+Yes	हाँ
+No	नहीं
+Faces of {0}	{0} के चेहरे
+Right-click a face that isn't them.	जो चेहरा उनका नहीं है उस पर राइट-क्लिक करें।
+Found by itself	अपने आप मिला
+Rename	नाम बदलें
+A new name. If someone already has it, the two become one person.	एक नया नाम। अगर किसी का पहले से यही नाम है, तो दोनों एक ही व्यक्ति बन जाते हैं।
+{0} and {1} are the same person? Their faces are put together under “{2}”.	{0} और {1} एक ही व्यक्ति हैं? उनके चेहरे “{2}” के अंतर्गत साथ रखे जाएँगे।
+No one else is named yet	अभी तक किसी और का नाम नहीं रखा गया
+Forget “{0}”? Their photos stay; their faces go back to “Who is this?”.	“{0}” को भूल जाएँ? उनके फ़ोटो रहेंगे; उनके चेहरे “यह कौन है?” में वापस जाएँगे।
+This is {0}	यह {0} है
+This is someone else…	यह कोई और है…
+Their name.	उनका नाम।
+Not {0}	{0} नहीं
+Not a face	चेहरा नहीं
+The face models aren't next to KUDUPIX (install it again to get them).	चेहरे वाले मॉडल KUDUPIX के पास नहीं हैं (उन्हें पाने के लिए फिर से इंस्टॉल करें)।
+People can't work on this PC: {0}	इस पीसी पर लोग वाला हिस्सा काम नहीं कर सकता: {0}
+KUDUPIX faces	KUDUPIX faces
+Looking for people… {0} of {1} photos	लोग ढूँढे जा रहे हैं… {0} / {1} फ़ोटो
+Photos and videos	फ़ोटो और वीडियो
+Video	वीडियो
+Fixed in KUDUPIX (the file itself isn't changed until you save)	KUDUPIX में सुधारा गया (सहेजने तक फ़ाइल नहीं बदलती)
+{0} ran into a problem it couldn't get past, and has to close.	{0} में ऐसी समस्या आई जिससे वह आगे नहीं बढ़ सका, इसलिए इसे बंद होना पड़ेगा।
+KUDUPIX thumbnails	KUDUPIX thumbnails
+{0}.jpg	{0}.jpg
+Hide faces	चेहरे छिपाएँ
+Show faces	चेहरे दिखाएँ
+With {0}	{0} के साथ
+Faces show on the photo as it was taken: undo turning, straightening and cropping to see them.	चेहरे फ़ोटो पर वैसे दिखते हैं जैसे वह लिया गया था: उन्हें देखने के लिए घुमाना, सीधा करना और काटना पूर्ववत करें।
+Back to photos	फ़ोटो पर वापस
+Esc	Esc
+A frame round each face, with who it is. Click a frame to name it or fix it.	हर चेहरे के चारों ओर एक फ़्रेम, और वह कौन है। नाम रखने या सुधारने के लिए फ़्रेम पर क्लिक करें।
+Delete	हटाएँ
+Move to the Recycle Bin (Delete)	रीसायकल बिन में भेजें (Delete)
+Previous (Left arrow)	पिछला (बायाँ तीर)
+Next (Right arrow)	अगला (दायाँ तीर)
+Play or pause (Space)	चलाएँ या रोकें (Space)
+Position in the video	वीडियो में स्थिति
+Sound on or off	आवाज़ चालू या बंद
+unknown	अज्ञात
+Windows can't play this video here (it may need a codec Windows doesn't have).\nDouble-click the file in File Explorer to play it with another player.	Windows यह वीडियो यहाँ नहीं चला सकता (शायद ऐसा कोडेक चाहिए जो Windows में नहीं है)।\nदूसरे प्लेयर में चलाने के लिए फ़ाइल एक्सप्लोरर में फ़ाइल पर डबल-क्लिक करें।
+Windows can't open this picture (it may need a codec, such as the HEIF one from the Microsoft Store, for HEIC photos).	Windows यह चित्र नहीं खोल सकता (शायद कोडेक चाहिए, जैसे HEIC फ़ोटो के लिए Microsoft Store का HEIF)।
+{0} (key {1})	{0} (कुंजी {1})
+Saving a copy…	कॉपी सहेजी जा रही है…
+The copy couldn't be saved.\n\n{0}	कॉपी सहेजी नहीं जा सकी।\n\n{0}
+The copy wasn't saved	कॉपी सहेजी नहीं गई
+Saved as {0}	{0} के रूप में सहेजा गया
+Save the fixes into “{0}” itself?\n\nKUDUPIX first keeps the untouched photo in its own folder, so you can put it back later (“Put the original back”). The photo keeps its date and details.	सुधार “{0}” में ही सहेजें?\n\nKUDUPIX पहले अनछुआ फ़ोटो अपने फ़ोल्डर में रखता है, ताकि आप उसे बाद में वापस रख सकें (“मूल वापस रखें”)। फ़ोटो की तारीख और विवरण बने रहते हैं।
+Save over the original	मूल के ऊपर सहेजें
+Saving…	सहेजा जा रहा है…
+The photo couldn't be saved; it's unchanged.\n\n{0}	फ़ोटो सहेजा नहीं जा सका; वह नहीं बदला।\n\n{0}
+Not saved	सहेजा नहीं गया
+Saved into {0} (the original is kept)	{0} में सहेजा गया (मूल रखा गया है)
+Put back the original of “{0}”, as it was before you saved over it on {1}?\n\nThe fixes saved into it go.	“{0}” का मूल वापस रखें, जैसा वह {1} को उसके ऊपर सहेजने से पहले था?\n\nउसमें सहेजे गए सुधार चले जाएँगे।
+Put the original back	मूल वापस रखें
+The original couldn't be put back.\n\n{0}	मूल वापस नहीं रखा जा सका।\n\n{0}
+The original of {0} is back	{0} का मूल वापस आ गया
+Fix this photo	यह फ़ोटो सुधारें
+The file stays as it is until you save. Your fixes are kept in KUDUPIX, so you can change them later.	सहेजने तक फ़ाइल जैसी है वैसी रहती है। आपके सुधार KUDUPIX में रखे जाते हैं, ताकि आप उन्हें बाद में बदल सकें।
+Auto-fix	अपने आप सुधारें
+Brightness and colours in one click (click again to undo)	एक क्लिक में चमक और रंग (पूर्ववत करने के लिए फिर क्लिक करें)
+Crop	काटें
+Drag the corners or edges of the frame; drag inside it to move it	फ़्रेम के कोने या किनारे खींचें; हिलाने के लिए उसके अंदर खींचें
+A quarter turn to the left ([)	बाईं ओर चौथाई घुमाव ([)
+A quarter turn to the right (])	दाईं ओर चौथाई घुमाव (])
+Straighten	सीधा करें
+Level a sloping horizon	तिरछे क्षितिज को सीधा करें
+Red-eye	लाल आँख
+Click on each red eye in the photo	फ़ोटो में हर लाल आँख पर क्लिक करें
+Done cropping	काटना पूरा
+Whole photo	पूरा फ़ोटो
+Click on each red eye in the photo. Click Red-eye again when you're done.	फ़ोटो में हर लाल आँख पर क्लिक करें। हो जाने पर लाल आँख पर फिर क्लिक करें।
+Undo the red-eye fixes ({0})	लाल आँख के सुधार पूर्ववत करें ({0})
+Double-click to put it back to 0	0 पर वापस लाने के लिए डबल-क्लिक करें
+Brightness	चमक
+Contrast	कंट्रास्ट
+Warmth	गर्माहट
+Colour	रंग
+Undo all the fixes	सभी सुधार पूर्ववत करें
+Save a copy	कॉपी सहेजें
+Save over the original…	मूल के ऊपर सहेजें…
+Windows can't write {0} photos; save a copy instead (it's saved as JPEG).	Windows {0} फ़ोटो नहीं लिख सकता; इसके बजाय कॉपी सहेजें (वह JPEG के रूप में सहेजी जाती है)।
+“Save a copy” makes {0} next to the photo. “Save over the original” asks first and keeps the untouched photo, so you can put it back later.	“कॉपी सहेजें” फ़ोटो के पास {0} बनाता है। “मूल के ऊपर सहेजें” पहले पूछता है और अनछुआ फ़ोटो रख लेता है, ताकि आप उसे बाद में वापस रख सकें।
+Put the original back (saved over on {0})	मूल वापस रखें ({0} को ऊपर सहेजा गया)
+Videos play here with Windows' own player. Stars, tags and albums work for videos too; fixes are for photos.	वीडियो यहाँ Windows के अपने प्लेयर में चलते हैं। स्टार, टैग और एल्बम वीडियो के लिए भी काम करते हैं; सुधार केवल फ़ोटो के लिए हैं।
+Back to the fixes	सुधारों पर वापस
+{0} item	{0} चीज़
+{0} items	{0} चीज़ें
+{0} folder	{0} फ़ोल्डर
+{0} folders	{0} फ़ोल्डर
+{0} group	{0} समूह
+{0} groups	{0} समूह
+{0} copy	{0} कॉपी
+{0} copies	{0} कॉपी
+{0} file	{0} फ़ाइल
+{0} files	{0} फ़ाइलें
+{0} photo	{0} फ़ोटो
+{0} photos	{0} फ़ोटो
+{0} video	{0} वीडियो
+{0} videos	{0} वीडियो
+{0} face	{0} चेहरा
+{0} faces	{0} चेहरे

@@ -1,0 +1,341 @@
+KUDUPIX is already open.	KUDUPIX ഇതിനകം തുറന്നിട്ടുണ്ട്.
+Something went wrong:\n\n{0}	എന്തോ പിശക് സംഭവിച്ചു:\n\n{0}
+Azeem Bukhari	Azeem Bukhari
+less than a second	ഒരു സെക്കൻഡിൽ താഴെ
+{0} h {1} min	{0} മണിക്കൂർ {1} മിനിറ്റ്
+{0} min {1} s	{0} മിനിറ്റ് {1} സെക്കൻഡ്
+.jpg	.jpg
+{0} (edited){1}	{0} (edited){1}
+{0} (edited {1}){2}	{0} (edited {1}){2}
+photo	photo
+{0}.new	{0}.new
+System Volume Information	System Volume Information
+{0}.bak	{0}.bak
+A picture needs a size.	ഒരു ചിത്രത്തിന് വലുപ്പം വേണം.
+The pixels don't match the size.	പിക്സലുകൾ വലുപ്പവുമായി ചേരുന്നില്ല.
+Theme	തീം
+Folders	ഫോൾഡറുകൾ
+Missing theme resource {0}	Missing theme resource {0}
+Light	ഇളം നിറം
+Styles	Styles
+Dark	ഇരുണ്ട നിറം
+Application	Application
+New album	പുതിയ ആൽബം
+video videos	video videos
+photo photos picture pictures	photo photos picture pictures
+place location gps	place location gps
+Today	ഇന്ന്
+Yesterday	ഇന്നലെ
+Looking for photos and videos…	ഫോട്ടോകളും വീഡിയോകളും തിരയുന്നു…
+Checking for new photos and videos…	പുതിയ ഫോട്ടോകളും വീഡിയോകളും ഉണ്ടോ എന്ന് നോക്കുന്നു…
+Looking for photos and videos… {0} so far	ഫോട്ടോകളും വീഡിയോകളും തിരയുന്നു… ഇതുവരെ {0}
+No folders chosen yet	ഇതുവരെ ഫോൾഡറുകളൊന്നും തിരഞ്ഞെടുത്തിട്ടില്ല
+Watching {0} · up to date	{0} നിരീക്ഷിക്കുന്നു · പുതുക്കിയത്
+Couldn't save stars, tags and albums: {0}	നക്ഷത്രങ്ങളും ടാഗുകളും ആൽബങ്ങളും സേവ് ചെയ്യാനായില്ല: {0}
+Error message shown: {0}	Error message shown: {0}
+All files	എല്ലാ ഫയലുകളും
+Save	സേവ് ചെയ്യുക
+Cancel	റദ്ദാക്കുക
+Duplicates	ഒരുപോലുള്ളവ
+Keep the best in every group	ഓരോ കൂട്ടത്തിലും ഏറ്റവും നല്ലത് സൂക്ഷിക്കുക
+The biggest (most pixels), and the one whose name doesn't look like a copy	ഏറ്റവും വലുത് (കൂടുതൽ പിക്സലുകൾ), പേര് ഒരു പകർപ്പിന്റേതുപോലെ തോന്നാത്തതും
+Move the others to the Recycle Bin	മറ്റുള്ളവ റീസൈക്കിൾ ബിന്നിലേക്ക് മാറ്റുക
+Stop	നിർത്തുക
+Getting photos ready to compare… {0} of {1}	താരതമ്യത്തിനായി ഫോട്ടോകൾ ഒരുക്കുന്നു… {0} / {1}
+Looking for copies…	പകർപ്പുകൾ തിരയുന്നു…
+No copies found	പകർപ്പുകളൊന്നും കണ്ടെത്തിയില്ല
+{0} · {1} could be freed	{0} · {1} ഒഴിവാക്കാം
+No copies found. Every photo and video here is different.	പകർപ്പുകളൊന്നും കണ്ടെത്തിയില്ല. ഇവിടെയുള്ള ഓരോ ഫോട്ടോയും വീഡിയോയും വ്യത്യസ്തമാണ്.
+Move {0} ({1}) to the Recycle Bin?\n\nThe ticked copy of each stays. You can get the others back from the Recycle Bin.	{0} ({1}) റീസൈക്കിൾ ബിന്നിലേക്ക് മാറ്റണോ?\n\nഓരോന്നിന്റെയും ടിക്ക് ചെയ്ത പകർപ്പ് നിലനിൽക്കും. മറ്റുള്ളവ റീസൈക്കിൾ ബിന്നിൽ നിന്ന് തിരികെ എടുക്കാം.
+Remove copies	പകർപ്പുകൾ നീക്കുക
+Moved {0} to the Recycle Bin	{0} റീസൈക്കിൾ ബിന്നിലേക്ക് മാറ്റി
+{0} couldn't be moved (in use, or Windows was asked to keep them).	{0} മാറ്റാനായില്ല (ഉപയോഗത്തിലാണ്, അല്ലെങ്കിൽ സൂക്ഷിക്കാൻ വിൻഡോസിനോട് പറഞ്ഞിട്ടുണ്ട്).
+{0}\n\nClick to keep or not keep this one	{0}\n\nഇത് സൂക്ഷിക്കണോ വേണ്ടയോ എന്നറിയിക്കാൻ ക്ലിക്ക് ചെയ്യുക
+Keep	സൂക്ഷിക്കുക
+Exact copies	കൃത്യമായ പകർപ്പുകൾ
+Same photo	ഒരേ ഫോട്ടോ
+Taken {0}	എടുത്തത് {0}
+Not copies: leave these	പകർപ്പുകളല്ല: ഇവ വിട്ടേക്കുക
+The picture couldn't be saved: {0}	ചിത്രം സേവ് ചെയ്യാനായില്ല: {0}
+Search names, tags, albums, folders, cameras, dates…	പേരുകൾ, ടാഗുകൾ, ആൽബങ്ങൾ, ഫോൾഡറുകൾ, ക്യാമറകൾ, തീയതികൾ എന്നിവ തിരയുക…
+Oldest first	പഴയത് ആദ്യം
+Photos	ഫോട്ടോകൾ
+Videos	വീഡിയോകൾ
+Search	തിരയുക
+Slideshow	സ്ലൈഡ്ഷോ
+Show the photos here one after another, full screen (F5)	ഇവിടെയുള്ള ഫോട്ടോകൾ ഒന്നിനുപിറകെ ഒന്നായി മുഴുവൻ സ്ക്രീനിൽ കാണിക്കുക (F5)
+Export	എക്സ്പോർട്ട് ചെയ്യുക
+Save copies to share: smaller, without the place, fixes included	പങ്കിടാൻ പകർപ്പുകൾ സേവ് ചെയ്യുക: ചെറുത്, സ്ഥലവിവരമില്ലാതെ, തിരുത്തലുകൾ ഉൾപ്പെടെ
+Folders…	ഫോൾഡറുകൾ…
+Choose the folders KUDUPIX looks in	KUDUPIX നോക്കുന്ന ഫോൾഡറുകൾ തിരഞ്ഞെടുക്കുക
+Settings	ക്രമീകരണങ്ങൾ
+About	വിവരം
+Picture size	ചിത്രത്തിന്റെ വലുപ്പം
+no folders yet	ഇതുവരെ ഫോൾഡറുകളില്ല
+KUDUPIX is looking for photos and videos in {0}. It only reads them: nothing is moved or changed.	KUDUPIX {0}-ൽ ഫോട്ടോകളും വീഡിയോകളും തിരയുന്നു. അവ വായിക്കുക മാത്രമേ ചെയ്യൂ: ഒന്നും മാറ്റുകയോ നീക്കുകയോ ഇല്ല.
+Choose folders	ഫോൾഡറുകൾ തിരഞ്ഞെടുക്കുക
+OK	ശരി
+{0} {1} is available	{0} {1} ലഭ്യമാണ്
+Library	ശേഖരം
+All photos and videos	എല്ലാ ഫോട്ടോകളും വീഡിയോകളും
+Starred	നക്ഷത്രമിട്ടവ
+By month	മാസം തിരിച്ച്
+People	ആളുകൾ
+Albums	ആൽബങ്ങൾ
+Rename…	പേരുമാറ്റുക…
+Remove the album (the photos stay)	ആൽബം നീക്കുക (ഫോട്ടോകൾ നിലനിൽക്കും)
++  New album	+  പുതിയ ആൽബം
+Choose folders…	ഫോൾഡറുകൾ തിരഞ്ഞെടുക്കുക…
+Tags	ടാഗുകൾ
+Faces and questions	മുഖങ്ങളും ചോദ്യങ്ങളും
+Add to album	ആൽബത്തിൽ ചേർക്കുക
+Fix	തിരുത്തുക
+Open the photo to fix it (rotate, crop, colours, red-eye)	ഫോട്ടോ തിരുത്താൻ തുറക്കുക (തിരിക്കുക, മുറിക്കുക, നിറങ്ങൾ, ചുവന്ന കണ്ണ്)
+Album	ആൽബം
+Tagged “{0}”	“{0}” ടാഗ് ചെയ്തവ
+Person	ആൾ
+Search results	തിരച്ചിൽ ഫലങ്ങൾ
+{0} shown of {1}	{1}-ൽ {0} കാണിക്കുന്നു
+1 selected	1 തിരഞ്ഞെടുത്തു
+{0} selected	{0} തിരഞ്ഞെടുത്തു
+Select a photo or video to see its details, give it stars and tags, or add it to an album.\n\nDouble-click to open it. Ctrl+click or Shift+click to select more than one.	വിവരങ്ങൾ കാണാനും നക്ഷത്രങ്ങളും ടാഗുകളും നൽകാനും ആൽബത്തിൽ ചേർക്കാനും ഒരു ഫോട്ടോയോ വീഡിയോയോ തിരഞ്ഞെടുക്കുക.\n\nതുറക്കാൻ ഡബിൾ-ക്ലിക്ക് ചെയ്യുക. ഒന്നിലധികം തിരഞ്ഞെടുക്കാൻ Ctrl+ക്ലിക്ക് അല്ലെങ്കിൽ Shift+ക്ലിക്ക്.
+Show it in File Explorer	ഫയൽ എക്സ്പ്ലോററിൽ കാണിക്കുക
+{0} · stars and tags go on all of them	{0} · നക്ഷത്രങ്ങളും ടാഗുകളും എല്ലാറ്റിനും ബാധകം
+1 star	1 നക്ഷത്രം
+{0} stars	{0} നക്ഷത്രങ്ങൾ
+Stars	നക്ഷത്രങ്ങൾ
+Take this tag off	ഈ ടാഗ് നീക്കുക
+New tag	പുതിയ ടാഗ്
++ Add a tag	+ ഒരു ടാഗ് ചേർക്കുക
+Take it out of this album (the photo stays where it is)	ഈ ആൽബത്തിൽ നിന്ന് എടുത്തുമാറ്റുക (ഫോട്ടോ എവിടെയാണോ അവിടെ തന്നെ നിൽക്കും)
++ Add to album	+ ആൽബത്തിൽ ചേർക്കുക
+Details	വിവരങ്ങൾ
+Filmed	ചിത്രീകരിച്ചത്
+Taken	എടുത്തത്
+Not stored in the file	ഫയലിൽ സൂക്ഷിച്ചിട്ടില്ല
+File date	ഫയലിന്റെ തീയതി
+Size	വലുപ്പം
+Length	ദൈർഘ്യം
+Camera	ക്യാമറ
+Place	സ്ഥലം
+Show the place on a map	സ്ഥലം മാപ്പിൽ കാണിക്കുക
+Opens OpenStreetMap in your browser	നിങ്ങളുടെ ബ്രൗസറിൽ OpenStreetMap തുറക്കുന്നു
+Select photos first	ആദ്യം ഫോട്ടോകൾ തിരഞ്ഞെടുക്കുക
+New album…	പുതിയ ആൽബം…
+Added {0} to “{1}”	{0} “{1}”-ൽ ചേർത്തു
+A name for the album. Albums only point to your photos: nothing is moved or copied.	ആൽബത്തിന് ഒരു പേര്. ആൽബങ്ങൾ നിങ്ങളുടെ ഫോട്ടോകളിലേക്ക് ചൂണ്ടുക മാത്രം ചെയ്യുന്നു: ഒന്നും നീക്കുകയോ പകർത്തുകയോ ഇല്ല.
+Rename album	ആൽബത്തിന്റെ പേരുമാറ്റുക
+A new name for the album.	ആൽബത്തിന് ഒരു പുതിയ പേര്.
+Remove the album “{0}”?\n\nOnly the album goes: its {1} stay where they are.	“{0}” ആൽബം നീക്കണോ?\n\nആൽബം മാത്രമേ പോകൂ: അതിലെ {1} എവിടെയാണോ അവിടെ തന്നെ നിൽക്കും.
+Open	തുറക്കുക
+Turn right	വലത്തേക്ക് തിരിക്കുക
+Turn left	ഇടത്തേക്ക് തിരിക്കുക
+No stars	നക്ഷത്രമില്ല
+Take out of this album	ഈ ആൽബത്തിൽ നിന്ന് എടുക്കുക
+Export…	എക്സ്പോർട്ട് ചെയ്യുക…
+Print…	പ്രിന്റ് ചെയ്യുക…
+Show in File Explorer	ഫയൽ എക്സ്പ്ലോററിൽ കാണിക്കുക
+Copy the file path	ഫയലിന്റെ വഴി പകർത്തുക
+Move to the Recycle Bin…	റീസൈക്കിൾ ബിന്നിലേക്ക് മാറ്റുക…
+Move {0} to the Recycle Bin…	{0} റീസൈക്കിൾ ബിന്നിലേക്ക് മാറ്റുക…
+Move {0} to the Recycle Bin?\n\nYou can get {1} back from the Recycle Bin. Stars, tags and albums for {2} are forgotten.	{0} റീസൈക്കിൾ ബിന്നിലേക്ക് മാറ്റണോ?\n\n{1} റീസൈക്കിൾ ബിന്നിൽ നിന്ന് തിരികെ എടുക്കാം. {2}-ന്റെ നക്ഷത്രങ്ങളും ടാഗുകളും ആൽബങ്ങളും മറക്കും.
+{0} couldn't be moved to the Recycle Bin (in use, or Windows was asked to keep {1}):\n\n{2}	{0} റീസൈക്കിൾ ബിന്നിലേക്ക് മാറ്റാനായില്ല (ഉപയോഗത്തിലാണ്, അല്ലെങ്കിൽ {1} സൂക്ഷിക്കാൻ വിൻഡോസിനോട് പറഞ്ഞിട്ടുണ്ട്):\n\n{2}
+There's nothing here to export. Select photos, or choose a part of the library with some in it.	ഇവിടെ എക്സ്പോർട്ട് ചെയ്യാൻ ഒന്നുമില്ല. ഫോട്ടോകൾ തിരഞ്ഞെടുക്കുക, അല്ലെങ്കിൽ ഫോട്ടോകളുള്ള ഒരു ഭാഗം തിരഞ്ഞെടുക്കുക.
+There are no photos here for a slideshow.	സ്ലൈഡ്ഷോയ്ക്ക് ഇവിടെ ഫോട്ടോകളില്ല.
+Is this {0}? ({1})	ഇത് {0} ആണോ? ({1})
+Settings · KUDUPIX	ക്രമീകരണങ്ങൾ · KUDUPIX
+Folders KUDUPIX looks in	KUDUPIX നോക്കുന്ന ഫോൾഡറുകൾ
+Photos and videos in these folders (and the folders inside them) are shown. They're only read: KUDUPIX never moves or changes them.	ഈ ഫോൾഡറുകളിലെ (അവയ്ക്കുള്ളിലെ ഫോൾഡറുകളിലെയും) ഫോട്ടോകളും വീഡിയോകളും കാണിക്കും. അവ വായിക്കുക മാത്രം: KUDUPIX ഒരിക്കലും അവ നീക്കുകയോ മാറ്റുകയോ ഇല്ല.
+Add a folder…	ഒരു ഫോൾഡർ ചേർക്കുക…
+Add the usual ones (Pictures, Videos, OneDrive)	സാധാരണയുള്ളവ ചേർക്കുക (Pictures, Videos, OneDrive)
+Appearance	രൂപം
+Same as Windows	വിൻഡോസിലേതു പോലെ
+Space KUDUPIX uses	KUDUPIX ഉപയോഗിക്കുന്ന സ്ഥലം
+Small pictures for the grid: {0}. They're made again when needed.	ഗ്രിഡിനുള്ള ചെറിയ ചിത്രങ്ങൾ: {0}. വേണ്ടപ്പോൾ വീണ്ടും ഉണ്ടാക്കും.
+Remove them	അവ നീക്കുക
+Originals kept before “Save over the original”: {0}, {1}.	“ഒറിജിനലിനു മുകളിൽ സേവ് ചെയ്യുക”-ന് മുമ്പ് സൂക്ഷിച്ച ഒറിജിനലുകൾ: {0}, {1}.
+Open the folder	ഫോൾഡർ തുറക്കുക
+Updates	അപ്ഡേറ്റുകൾ
+Check for a new KUDUPIX version when it starts	തുറക്കുമ്പോൾ KUDUPIX-ന്റെ പുതിയ പതിപ്പുണ്ടോ എന്ന് നോക്കുക
+Only asks GitHub for the latest version number. Nothing is downloaded without asking.	ഏറ്റവും പുതിയ പതിപ്പിന്റെ നമ്പർ മാത്രമേ GitHub-നോട് ചോദിക്കൂ. ചോദിക്കാതെ ഒന്നും ഡൗൺലോഡ് ചെയ്യില്ല.
+About KUDUPIX	KUDUPIX-നെക്കുറിച്ച്
+Close	അടയ്ക്കുക
+No folders yet: add one.	ഇതുവരെ ഫോൾഡറുകളില്ല: ഒന്ന് ചേർക്കുക.
+(not there now)	(ഇപ്പോൾ അവിടെ ഇല്ല)
+Remove	നീക്കുക
+Choose a folder with photos or videos	ഫോട്ടോകളോ വീഡിയോകളോ ഉള്ള ഒരു ഫോൾഡർ തിരഞ്ഞെടുക്കുക
+KUDUPIX	KUDUPIX
+Version {0} · Your photos and videos, organised	പതിപ്പ് {0} · നിങ്ങളുടെ ഫോട്ടോകളും വീഡിയോകളും, ചിട്ടയോടെ
+Azeem, with Claude and	Azeem, with Claude and
+Made by	Made by
+Licence	ലൈസൻസ്
+MIT · free and open source	MIT · സൗജന്യവും ഓപ്പൺ സോഴ്സും
+View	കാണുക
+Source code	സോഴ്സ് കോഡ്
+Pictures and videos	ചിത്രങ്ങളും വീഡിയോകളും
+Opened and played with Windows' own codecs and player	വിൻഡോസിന്റെ സ്വന്തം കോഡെക്കുകളും പ്ലെയറും ഉപയോഗിച്ച് തുറക്കുകയും പ്ലേ ചെയ്യുകയും ചെയ്യുന്നു
+Faces found and told apart on this PC with the YuNet (MIT) and SFace (Apache 2.0) models from OpenCV, run by ONNX Runtime (MIT)	OpenCV-യിൽ നിന്നുള്ള YuNet (MIT), SFace (Apache 2.0) മോഡലുകൾ ഉപയോഗിച്ച് ഈ പിസിയിൽ തന്നെ മുഖങ്ങൾ കണ്ടെത്തി വേർതിരിക്കുന്നു; ONNX Runtime (MIT) ആണ് അവ പ്രവർത്തിപ്പിക്കുന്നത്
+Third-party	മറ്റുള്ളവരുടേത്
+Third-party notices	മറ്റുള്ളവരുടെ ഭാഗങ്ങളുടെ അറിയിപ്പുകൾ
+KUDUPIX works on your computer only. Your photos, videos and the faces in them never leave it, and it never changes them unless you choose “Save over the original” (which keeps the untouched photo first). The internet is used only to check for a new version, and to open a map when you ask.	KUDUPIX നിങ്ങളുടെ കമ്പ്യൂട്ടറിൽ മാത്രം പ്രവർത്തിക്കുന്നു. നിങ്ങളുടെ ഫോട്ടോകളും വീഡിയോകളും അവയിലെ മുഖങ്ങളും അത് വിട്ടുപോകില്ല; “ഒറിജിനലിനു മുകളിൽ സേവ് ചെയ്യുക” തിരഞ്ഞെടുത്താലല്ലാതെ (അപ്പോഴും തൊടാത്ത ഫോട്ടോ ആദ്യം സൂക്ഷിക്കും) അവയെ ഒരിക്കലും മാറ്റില്ല. പുതിയ പതിപ്പുണ്ടോ എന്ന് നോക്കാനും നിങ്ങൾ ചോദിക്കുമ്പോൾ മാപ്പ് തുറക്കാനും മാത്രമാണ് ഇന്റർനെറ്റ് ഉപയോഗിക്കുന്നത്.
+Check for updates	അപ്ഡേറ്റുകൾ പരിശോധിക്കുക
+Couldn't find any published version yet.	പ്രസിദ്ധീകരിച്ച പതിപ്പൊന്നും ഇതുവരെ കണ്ടെത്തിയില്ല.
+KUDUPIX {0} is available. Open the download page?	KUDUPIX {0} ലഭ്യമാണ്. ഡൗൺലോഡ് പേജ് തുറക്കണോ?
+You have the latest version.	നിങ്ങളുടെ കയ്യിലുള്ളത് ഏറ്റവും പുതിയ പതിപ്പാണ്.
+Couldn't check for updates. Check your internet connection and try again.	അപ്ഡേറ്റുകൾ പരിശോധിക്കാനായില്ല. ഇന്റർനെറ്റ് കണക്ഷൻ നോക്കിയിട്ട് വീണ്ടും ശ്രമിക്കുക.
+Leave out where the photos were taken	ഫോട്ടോകൾ എടുത്ത സ്ഥലം ഒഴിവാക്കുക
+The size it is	ഇപ്പോഴുള്ള വലുപ്പം
+Large (2048 pixels)	വലുത് (2048 പിക്സൽ)
+Medium (1600 pixels)	ഇടത്തരം (1600 പിക്സൽ)
+Small (1024 pixels)	ചെറുത് (1024 പിക്സൽ)
+For email (640 pixels)	ഇമെയിലിന് (640 പിക്സൽ)
+Export · KUDUPIX	എക്സ്പോർട്ട് · KUDUPIX
+{0} and {1}	{0}, {1}
+Copies of {0}, to share or keep elsewhere. Photos get their fixes; videos are copied as they are. The originals stay as they are.	{0}-ന്റെ പകർപ്പുകൾ, പങ്കിടാനോ മറ്റെവിടെയെങ്കിലും സൂക്ഷിക്കാനോ. ഫോട്ടോകൾക്ക് അവയുടെ തിരുത്തലുകൾ ഉണ്ടാകും; വീഡിയോകൾ അതേപടി പകർത്തും. ഒറിജിനലുകൾ മാറില്ല.
+Photo size (the longest side)	ഫോട്ടോയുടെ വലുപ്പം (നീളമുള്ള വശം)
+Best	ഏറ്റവും നല്ലത്
+Good (smaller files)	നല്ലത് (ചെറിയ ഫയലുകൾ)
+Smallest files	ഏറ്റവും ചെറിയ ഫയലുകൾ
+Quality	ഗുണനിലവാരം
+Phones store where each photo was taken. Leaving it out is safer when sharing.	ഓരോ ഫോട്ടോയും എടുത്ത സ്ഥലം ഫോണുകൾ സൂക്ഷിക്കുന്നു. പങ്കിടുമ്പോൾ അത് ഒഴിവാക്കുന്നതാണ് സുരക്ഷിതം.
+Save them in	ഇവിടെ സേവ് ചെയ്യുക
+KUDUPIX export	KUDUPIX export
+Choose…	തിരഞ്ഞെടുക്കുക…
+Where to save the copies	പകർപ്പുകൾ എവിടെ സേവ് ചെയ്യണം
+Stopped: {0} saved.	നിർത്തി: {0} സേവ് ചെയ്തു.
+Saved {0} in {1}.{2}	{1}-ൽ {0} സേവ് ചെയ്തു.{2}
+ {0} couldn't be saved: {1}	 {0} സേവ് ചെയ്യാനായില്ല: {1}
+No folder chosen	ഫോൾഡറൊന്നും തിരഞ്ഞെടുത്തിട്ടില്ല
+Saving {0} of {1}: {2}	{0} / {1} സേവ് ചെയ്യുന്നു: {2}
+Slideshow · KUDUPIX	സ്ലൈഡ്ഷോ · KUDUPIX
+·  paused	·  നിർത്തിവച്ചു
+{2}  ·  {0} of {1}	{2}  ·  {0} / {1}
+These photos couldn't be opened for printing.\n\n{0}	ഈ ഫോട്ടോകൾ പ്രിന്റ് ചെയ്യാൻ തുറക്കാനായില്ല.\n\n{0}
+KUDUPIX photos	KUDUPIX photos
+Looking for people in your photos… {0} of {1}. You can name people already.	നിങ്ങളുടെ ഫോട്ടോകളിൽ ആളുകളെ തിരയുന്നു… {0} / {1}. ഇപ്പോൾ തന്നെ ആളുകൾക്ക് പേരിടാം.
+Faces are looked for on this PC only; nothing is sent anywhere. Only faces big enough to tell who it is are grouped.	മുഖങ്ങൾ ഈ പിസിയിൽ മാത്രമേ തിരയൂ; ഒന്നും എവിടേക്കും അയയ്ക്കില്ല. ആരാണെന്ന് തിരിച്ചറിയാൻ മതിയായ വലുപ്പമുള്ള മുഖങ്ങൾ മാത്രമേ കൂട്ടമാക്കൂ.
+Some faces might be people you've named. Have a look:	ചില മുഖങ്ങൾ നിങ്ങൾ പേരിട്ട ആളുകളാകാം. ഒന്ന് നോക്കൂ:
+People you've named	നിങ്ങൾ പേരിട്ട ആളുകൾ
+(hidden)	(മറച്ചത്)
+Who is this?	ഇത് ആരാണ്?
+Groups of faces appear here as photos are looked at.	ഫോട്ടോകൾ നോക്കുന്നതനുസരിച്ച് മുഖങ്ങളുടെ കൂട്ടങ്ങൾ ഇവിടെ വരും.
+No more groups of faces to name.	പേരിടാൻ ഇനി മുഖക്കൂട്ടങ്ങളില്ല.
+The same face seen in more than one photo. Click a group to name it.	ഒന്നിലധികം ഫോട്ടോകളിൽ കണ്ട ഒരേ മുഖം. പേരിടാൻ ഒരു കൂട്ടത്തിൽ ക്ലിക്ക് ചെയ്യുക.
+Don't show hidden people	മറച്ച ആളുകളെ കാണിക്കരുത്
+Show hidden people ({0})	മറച്ച ആളുകളെ കാണിക്കുക ({0})
+‹ People	‹ ആളുകൾ
+Type their name. If one of these isn't the same person, click it to leave it out.	അവരുടെ പേര് ടൈപ്പ് ചെയ്യുക. ഇവരിൽ ആരെങ്കിലും അതേ ആളല്ലെങ്കിൽ, ഒഴിവാക്കാൻ അതിൽ ക്ലിക്ക് ചെയ്യുക.
+Name them	പേരിടുക
+Left out	ഒഴിവാക്കി
+Named {0} “{1}”	{0} “{1}” എന്ന് പേരിട്ടു
+Name	പേര്
+hidden	മറച്ചത്
+See their photos	അവരുടെ ഫോട്ടോകൾ കാണുക
+Show in People	ആളുകളിൽ കാണിക്കുക
+Hide	മറയ്ക്കുക
+The same person as…	ഇതേ ആൾ തന്നെ…
+Forget this person	ഈ ആളെ മറക്കുക
+Is this {0}?	ഇത് {0} ആണോ?
+These faces look a little like them. Say yes or no; it helps with the rest.	ഈ മുഖങ്ങൾക്ക് അവരുമായി ചെറിയ സാദൃശ്യമുണ്ട്. അതെ എന്നോ അല്ല എന്നോ പറയുക; ബാക്കിയുള്ളവയ്ക്ക് അത് സഹായിക്കും.
+Yes	അതെ
+No	അല്ല
+Faces of {0}	{0}-ന്റെ മുഖങ്ങൾ
+Right-click a face that isn't them.	അവരല്ലാത്ത മുഖത്തിൽ റൈറ്റ്-ക്ലിക്ക് ചെയ്യുക.
+Found by itself	തനിയെ കണ്ടെത്തിയത്
+Rename	പേരുമാറ്റുക
+A new name. If someone already has it, the two become one person.	ഒരു പുതിയ പേര്. മറ്റൊരാൾക്ക് ഇതിനകം ആ പേരുണ്ടെങ്കിൽ, രണ്ടുപേരും ഒരാളാകും.
+{0} and {1} are the same person? Their faces are put together under “{2}”.	{0}-ഉം {1}-ഉം ഒരേ ആളാണോ? അവരുടെ മുഖങ്ങൾ “{2}” എന്നതിന് കീഴിൽ ഒന്നിച്ചാക്കും.
+No one else is named yet	മറ്റാർക്കും ഇതുവരെ പേരിട്ടിട്ടില്ല
+Forget “{0}”? Their photos stay; their faces go back to “Who is this?”.	“{0}”-നെ മറക്കണോ? അവരുടെ ഫോട്ടോകൾ നിലനിൽക്കും; മുഖങ്ങൾ “ഇത് ആരാണ്?” എന്നതിലേക്ക് മടങ്ങും.
+This is {0}	ഇത് {0} ആണ്
+This is someone else…	ഇത് മറ്റൊരാളാണ്…
+Their name.	അവരുടെ പേര്.
+Not {0}	{0} അല്ല
+Not a face	മുഖമല്ല
+The face models aren't next to KUDUPIX (install it again to get them).	മുഖം തിരിച്ചറിയുന്ന മോഡലുകൾ KUDUPIX-ന്റെ അടുത്തില്ല (അവ ലഭിക്കാൻ വീണ്ടും ഇൻസ്റ്റാൾ ചെയ്യുക).
+People can't work on this PC: {0}	ഈ പിസിയിൽ ആളുകൾ എന്ന ഭാഗം പ്രവർത്തിക്കില്ല: {0}
+KUDUPIX faces	KUDUPIX faces
+Looking for people… {0} of {1} photos	ആളുകളെ തിരയുന്നു… {0} / {1} ഫോട്ടോകൾ
+Photos and videos	ഫോട്ടോകളും വീഡിയോകളും
+Video	വീഡിയോ
+Fixed in KUDUPIX (the file itself isn't changed until you save)	KUDUPIX-ൽ തിരുത്തിയത് (സേവ് ചെയ്യുന്നതുവരെ ഫയൽ മാറില്ല)
+{0} ran into a problem it couldn't get past, and has to close.	{0}-ന് മറികടക്കാൻ കഴിയാത്ത ഒരു പ്രശ്നം ഉണ്ടായി; അതിനാൽ അടയ്ക്കേണ്ടിവരുന്നു.
+KUDUPIX thumbnails	KUDUPIX thumbnails
+{0}.jpg	{0}.jpg
+Hide faces	മുഖങ്ങൾ മറയ്ക്കുക
+Show faces	മുഖങ്ങൾ കാണിക്കുക
+With {0}	{0}-നൊപ്പം
+Faces show on the photo as it was taken: undo turning, straightening and cropping to see them.	എടുത്തപോലെയുള്ള ഫോട്ടോയിലാണ് മുഖങ്ങൾ കാണിക്കുന്നത്: അവ കാണാൻ തിരിക്കലും നേരെയാക്കലും മുറിക്കലും പഴയപടിയാക്കുക.
+Back to photos	ഫോട്ടോകളിലേക്ക് മടങ്ങുക
+Esc	Esc
+A frame round each face, with who it is. Click a frame to name it or fix it.	ഓരോ മുഖത്തിനും ചുറ്റും ഒരു ഫ്രെയിം, അത് ആരാണെന്നും. പേരിടാനോ തിരുത്താനോ ഫ്രെയിമിൽ ക്ലിക്ക് ചെയ്യുക.
+Delete	ഇല്ലാതാക്കുക
+Move to the Recycle Bin (Delete)	റീസൈക്കിൾ ബിന്നിലേക്ക് മാറ്റുക (Delete)
+Previous (Left arrow)	മുമ്പത്തേത് (ഇടത് അമ്പ്)
+Next (Right arrow)	അടുത്തത് (വലത് അമ്പ്)
+Play or pause (Space)	പ്ലേ അല്ലെങ്കിൽ നിർത്തിവയ്ക്കുക (Space)
+Position in the video	വീഡിയോയിലെ സ്ഥാനം
+Sound on or off	ശബ്ദം ഓൺ അല്ലെങ്കിൽ ഓഫ്
+unknown	അറിയില്ല
+Windows can't play this video here (it may need a codec Windows doesn't have).\nDouble-click the file in File Explorer to play it with another player.	ഈ വീഡിയോ ഇവിടെ പ്ലേ ചെയ്യാൻ വിൻഡോസിന് കഴിയില്ല (വിൻഡോസിൽ ഇല്ലാത്ത ഒരു കോഡെക് വേണ്ടിവരാം).\nമറ്റൊരു പ്ലെയറിൽ പ്ലേ ചെയ്യാൻ ഫയൽ എക്സ്പ്ലോററിൽ ഫയലിൽ ഡബിൾ-ക്ലിക്ക് ചെയ്യുക.
+Windows can't open this picture (it may need a codec, such as the HEIF one from the Microsoft Store, for HEIC photos).	ഈ ചിത്രം തുറക്കാൻ വിൻഡോസിന് കഴിയില്ല (HEIC ഫോട്ടോകൾക്ക് Microsoft Store-ലെ HEIF പോലെ ഒരു കോഡെക് വേണ്ടിവരാം).
+{0} (key {1})	{0} (കീ {1})
+Saving a copy…	ഒരു പകർപ്പ് സേവ് ചെയ്യുന്നു…
+The copy couldn't be saved.\n\n{0}	പകർപ്പ് സേവ് ചെയ്യാനായില്ല.\n\n{0}
+The copy wasn't saved	പകർപ്പ് സേവ് ചെയ്തില്ല
+Saved as {0}	{0} ആയി സേവ് ചെയ്തു
+Save the fixes into “{0}” itself?\n\nKUDUPIX first keeps the untouched photo in its own folder, so you can put it back later (“Put the original back”). The photo keeps its date and details.	തിരുത്തലുകൾ “{0}”-ൽ തന്നെ സേവ് ചെയ്യണോ?\n\nKUDUPIX ആദ്യം തൊടാത്ത ഫോട്ടോ സ്വന്തം ഫോൾഡറിൽ സൂക്ഷിക്കും, അതിനാൽ പിന്നീട് തിരികെ വയ്ക്കാം (“ഒറിജിനൽ തിരികെ വയ്ക്കുക”). ഫോട്ടോയുടെ തീയതിയും വിവരങ്ങളും നിലനിൽക്കും.
+Save over the original	ഒറിജിനലിനു മുകളിൽ സേവ് ചെയ്യുക
+Saving…	സേവ് ചെയ്യുന്നു…
+The photo couldn't be saved; it's unchanged.\n\n{0}	ഫോട്ടോ സേവ് ചെയ്യാനായില്ല; അത് മാറിയിട്ടില്ല.\n\n{0}
+Not saved	സേവ് ചെയ്തില്ല
+Saved into {0} (the original is kept)	{0}-ൽ സേവ് ചെയ്തു (ഒറിജിനൽ സൂക്ഷിച്ചിട്ടുണ്ട്)
+Put back the original of “{0}”, as it was before you saved over it on {1}?\n\nThe fixes saved into it go.	“{0}”-ന്റെ ഒറിജിനൽ, {1}-ന് അതിനു മുകളിൽ സേവ് ചെയ്യുന്നതിനുമുമ്പുള്ളതുപോലെ, തിരികെ വയ്ക്കണോ?\n\nഅതിൽ സേവ് ചെയ്ത തിരുത്തലുകൾ പോകും.
+Put the original back	ഒറിജിനൽ തിരികെ വയ്ക്കുക
+The original couldn't be put back.\n\n{0}	ഒറിജിനൽ തിരികെ വയ്ക്കാനായില്ല.\n\n{0}
+The original of {0} is back	{0}-ന്റെ ഒറിജിനൽ തിരികെ വന്നു
+Fix this photo	ഈ ഫോട്ടോ തിരുത്തുക
+The file stays as it is until you save. Your fixes are kept in KUDUPIX, so you can change them later.	നിങ്ങൾ സേവ് ചെയ്യുന്നതുവരെ ഫയൽ അതേപടി നിൽക്കും. നിങ്ങളുടെ തിരുത്തലുകൾ KUDUPIX-ൽ സൂക്ഷിക്കുന്നതിനാൽ പിന്നീട് മാറ്റാം.
+Auto-fix	തനിയെ തിരുത്തുക
+Brightness and colours in one click (click again to undo)	തെളിച്ചവും നിറങ്ങളും ഒറ്റ ക്ലിക്കിൽ (പഴയപടിയാക്കാൻ വീണ്ടും ക്ലിക്ക് ചെയ്യുക)
+Crop	മുറിക്കുക
+Drag the corners or edges of the frame; drag inside it to move it	ഫ്രെയിമിന്റെ മൂലകളോ അരികുകളോ വലിക്കുക; നീക്കാൻ അതിനുള്ളിൽ വലിക്കുക
+A quarter turn to the left ([)	ഇടത്തേക്ക് കാൽ തിരിവ് ([)
+A quarter turn to the right (])	വലത്തേക്ക് കാൽ തിരിവ് (])
+Straighten	നേരെയാക്കുക
+Level a sloping horizon	ചരിഞ്ഞ ചക്രവാളം നിരപ്പാക്കുക
+Red-eye	ചുവന്ന കണ്ണ്
+Click on each red eye in the photo	ഫോട്ടോയിലെ ഓരോ ചുവന്ന കണ്ണിലും ക്ലിക്ക് ചെയ്യുക
+Done cropping	മുറിക്കൽ കഴിഞ്ഞു
+Whole photo	മുഴുവൻ ഫോട്ടോ
+Click on each red eye in the photo. Click Red-eye again when you're done.	ഫോട്ടോയിലെ ഓരോ ചുവന്ന കണ്ണിലും ക്ലിക്ക് ചെയ്യുക. കഴിഞ്ഞാൽ ചുവന്ന കണ്ണ് വീണ്ടും ക്ലിക്ക് ചെയ്യുക.
+Undo the red-eye fixes ({0})	ചുവന്ന കണ്ണ് തിരുത്തലുകൾ പഴയപടിയാക്കുക ({0})
+Double-click to put it back to 0	0-ലേക്ക് തിരികെ വയ്ക്കാൻ ഡബിൾ-ക്ലിക്ക് ചെയ്യുക
+Brightness	തെളിച്ചം
+Contrast	കോൺട്രാസ്റ്റ്
+Warmth	ചൂട്
+Colour	നിറം
+Undo all the fixes	എല്ലാ തിരുത്തലുകളും പഴയപടിയാക്കുക
+Save a copy	ഒരു പകർപ്പ് സേവ് ചെയ്യുക
+Save over the original…	ഒറിജിനലിനു മുകളിൽ സേവ് ചെയ്യുക…
+Windows can't write {0} photos; save a copy instead (it's saved as JPEG).	{0} ഫോട്ടോകൾ എഴുതാൻ വിൻഡോസിന് കഴിയില്ല; പകരം ഒരു പകർപ്പ് സേവ് ചെയ്യുക (അത് JPEG ആയി സേവ് ചെയ്യും).
+“Save a copy” makes {0} next to the photo. “Save over the original” asks first and keeps the untouched photo, so you can put it back later.	“ഒരു പകർപ്പ് സേവ് ചെയ്യുക” ഫോട്ടോയുടെ അടുത്ത് {0} ഉണ്ടാക്കുന്നു. “ഒറിജിനലിനു മുകളിൽ സേവ് ചെയ്യുക” ആദ്യം ചോദിക്കുകയും തൊടാത്ത ഫോട്ടോ സൂക്ഷിക്കുകയും ചെയ്യുന്നു, അതിനാൽ പിന്നീട് തിരികെ വയ്ക്കാം.
+Put the original back (saved over on {0})	ഒറിജിനൽ തിരികെ വയ്ക്കുക ({0}-ന് മുകളിൽ സേവ് ചെയ്തത്)
+Videos play here with Windows' own player. Stars, tags and albums work for videos too; fixes are for photos.	വീഡിയോകൾ ഇവിടെ വിൻഡോസിന്റെ സ്വന്തം പ്ലെയറിൽ പ്ലേ ചെയ്യും. നക്ഷത്രങ്ങളും ടാഗുകളും ആൽബങ്ങളും വീഡിയോകൾക്കും പ്രവർത്തിക്കും; തിരുത്തലുകൾ ഫോട്ടോകൾക്ക് മാത്രം.
+Back to the fixes	തിരുത്തലുകളിലേക്ക് മടങ്ങുക
+{0} item	{0} ഇനം
+{0} items	{0} ഇനങ്ങൾ
+{0} folder	{0} ഫോൾഡർ
+{0} folders	{0} ഫോൾഡറുകൾ
+{0} group	{0} കൂട്ടം
+{0} groups	{0} കൂട്ടങ്ങൾ
+{0} copy	{0} പകർപ്പ്
+{0} copies	{0} പകർപ്പുകൾ
+{0} file	{0} ഫയൽ
+{0} files	{0} ഫയലുകൾ
+{0} photo	{0} ഫോട്ടോ
+{0} photos	{0} ഫോട്ടോകൾ
+{0} video	{0} വീഡിയോ
+{0} videos	{0} വീഡിയോകൾ
+{0} face	{0} മുഖം
+{0} faces	{0} മുഖങ്ങൾ

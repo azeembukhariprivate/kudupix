@@ -1,0 +1,341 @@
+KUDUPIX is already open.	KUDUPIX مفتوح بالفعل.
+Something went wrong:\n\n{0}	حدث خطأ ما:\n\n{0}
+Azeem Bukhari	Azeem Bukhari
+less than a second	أقل من ثانية
+{0} h {1} min	{0} ساعة {1} دقيقة
+{0} min {1} s	{0} دقيقة {1} ثانية
+.jpg	.jpg
+{0} (edited){1}	{0} (edited){1}
+{0} (edited {1}){2}	{0} (edited {1}){2}
+photo	photo
+{0}.new	{0}.new
+System Volume Information	System Volume Information
+{0}.bak	{0}.bak
+A picture needs a size.	تحتاج الصورة إلى حجم.
+The pixels don't match the size.	البكسلات لا تطابق الحجم.
+Theme	السمة
+Folders	المجلدات
+Missing theme resource {0}	Missing theme resource {0}
+Light	فاتح
+Styles	Styles
+Dark	داكن
+Application	Application
+New album	ألبوم جديد
+video videos	video videos
+photo photos picture pictures	photo photos picture pictures
+place location gps	place location gps
+Today	اليوم
+Yesterday	أمس
+Looking for photos and videos…	جارٍ البحث عن الصور ومقاطع الفيديو…
+Checking for new photos and videos…	جارٍ البحث عن صور ومقاطع فيديو جديدة…
+Looking for photos and videos… {0} so far	جارٍ البحث عن الصور ومقاطع الفيديو… {0} حتى الآن
+No folders chosen yet	لم يتم اختيار مجلدات بعد
+Watching {0} · up to date	مراقبة {0} · محدّث
+Couldn't save stars, tags and albums: {0}	تعذّر حفظ النجوم والوسوم والألبومات: {0}
+Error message shown: {0}	Error message shown: {0}
+All files	كل الملفات
+Save	حفظ
+Cancel	إلغاء
+Duplicates	المكرّرات
+Keep the best in every group	الاحتفاظ بالأفضل في كل مجموعة
+The biggest (most pixels), and the one whose name doesn't look like a copy	الأكبر (أكثر بكسلات)، والتي لا يبدو اسمها كاسم نسخة
+Move the others to the Recycle Bin	نقل الباقي إلى سلة المحذوفات
+Stop	إيقاف
+Getting photos ready to compare… {0} of {1}	جارٍ تجهيز الصور للمقارنة… {0} من {1}
+Looking for copies…	جارٍ البحث عن النسخ…
+No copies found	لم يتم العثور على نسخ
+{0} · {1} could be freed	{0} · يمكن تحرير {1}
+No copies found. Every photo and video here is different.	لم يتم العثور على نسخ. كل صورة وفيديو هنا مختلف.
+Move {0} ({1}) to the Recycle Bin?\n\nThe ticked copy of each stays. You can get the others back from the Recycle Bin.	هل تريد نقل {0} ({1}) إلى سلة المحذوفات؟\n\nتبقى النسخة المحدّدة من كل واحدة. يمكنك استعادة الباقي من سلة المحذوفات.
+Remove copies	إزالة النسخ
+Moved {0} to the Recycle Bin	تم نقل {0} إلى سلة المحذوفات
+{0} couldn't be moved (in use, or Windows was asked to keep them).	تعذّر نقل {0} (قيد الاستخدام، أو طُلب من Windows الاحتفاظ بها).
+{0}\n\nClick to keep or not keep this one	{0}\n\nانقر للاحتفاظ بهذه أو عدم الاحتفاظ بها
+Keep	احتفاظ
+Exact copies	نسخ مطابقة
+Same photo	الصورة نفسها
+Taken {0}	التُقطت {0}
+Not copies: leave these	ليست نسخًا: اتركها
+The picture couldn't be saved: {0}	تعذّر حفظ الصورة: {0}
+Search names, tags, albums, folders, cameras, dates…	ابحث في الأسماء والوسوم والألبومات والمجلدات والكاميرات والتواريخ…
+Oldest first	الأقدم أولًا
+Photos	الصور
+Videos	مقاطع الفيديو
+Search	بحث
+Slideshow	عرض شرائح
+Show the photos here one after another, full screen (F5)	عرض الصور هنا واحدة تلو الأخرى، بملء الشاشة (F5)
+Export	تصدير
+Save copies to share: smaller, without the place, fixes included	حفظ نسخ للمشاركة: أصغر، بدون المكان، مع التعديلات
+Folders…	المجلدات…
+Choose the folders KUDUPIX looks in	اختر المجلدات التي يبحث فيها KUDUPIX
+Settings	الإعدادات
+About	حول
+Picture size	حجم الصور
+no folders yet	لا مجلدات بعد
+KUDUPIX is looking for photos and videos in {0}. It only reads them: nothing is moved or changed.	يبحث KUDUPIX عن الصور ومقاطع الفيديو في {0}. يقرؤها فقط: لا يُنقل أو يُغيَّر أي شيء.
+Choose folders	اختيار مجلدات
+OK	موافق
+{0} {1} is available	{0} {1} متاح
+Library	المكتبة
+All photos and videos	كل الصور ومقاطع الفيديو
+Starred	ذات النجوم
+By month	حسب الشهر
+People	الأشخاص
+Albums	الألبومات
+Rename…	إعادة تسمية…
+Remove the album (the photos stay)	إزالة الألبوم (تبقى الصور)
++  New album	+  ألبوم جديد
+Choose folders…	اختيار مجلدات…
+Tags	الوسوم
+Faces and questions	الوجوه والأسئلة
+Add to album	إضافة إلى ألبوم
+Fix	تعديل
+Open the photo to fix it (rotate, crop, colours, red-eye)	افتح الصورة لتعديلها (تدوير، قص، ألوان، العين الحمراء)
+Album	ألبوم
+Tagged “{0}”	الموسومة بـ “{0}”
+Person	شخص
+Search results	نتائج البحث
+{0} shown of {1}	{0} معروضة من {1}
+1 selected	1 محدّد
+{0} selected	{0} محدّدة
+Select a photo or video to see its details, give it stars and tags, or add it to an album.\n\nDouble-click to open it. Ctrl+click or Shift+click to select more than one.	اختر صورة أو فيديو لرؤية تفاصيله، أو منحه نجومًا ووسومًا، أو إضافته إلى ألبوم.\n\nانقر نقرًا مزدوجًا لفتحه. Ctrl+نقر أو Shift+نقر لاختيار أكثر من واحد.
+Show it in File Explorer	إظهاره في مستكشف الملفات
+{0} · stars and tags go on all of them	{0} · النجوم والوسوم تنطبق على الكل
+1 star	نجمة واحدة
+{0} stars	{0} نجوم
+Stars	النجوم
+Take this tag off	إزالة هذا الوسم
+New tag	وسم جديد
++ Add a tag	+ إضافة وسم
+Take it out of this album (the photo stays where it is)	إخراجها من هذا الألبوم (تبقى الصورة مكانها)
++ Add to album	+ إضافة إلى ألبوم
+Details	التفاصيل
+Filmed	صُوّر
+Taken	التُقطت
+Not stored in the file	غير محفوظ في الملف
+File date	تاريخ الملف
+Size	الحجم
+Length	المدة
+Camera	الكاميرا
+Place	المكان
+Show the place on a map	إظهار المكان على خريطة
+Opens OpenStreetMap in your browser	يفتح OpenStreetMap في متصفحك
+Select photos first	اختر صورًا أولًا
+New album…	ألبوم جديد…
+Added {0} to “{1}”	تمت إضافة {0} إلى “{1}”
+A name for the album. Albums only point to your photos: nothing is moved or copied.	اسم للألبوم. الألبومات تشير إلى صورك فقط: لا يُنقل أو يُنسخ أي شيء.
+Rename album	إعادة تسمية الألبوم
+A new name for the album.	اسم جديد للألبوم.
+Remove the album “{0}”?\n\nOnly the album goes: its {1} stay where they are.	هل تريد إزالة الألبوم “{0}”؟\n\nيذهب الألبوم فقط: تبقى {1} مكانها.
+Open	فتح
+Turn right	تدوير لليمين
+Turn left	تدوير لليسار
+No stars	بلا نجوم
+Take out of this album	إخراج من هذا الألبوم
+Export…	تصدير…
+Print…	طباعة…
+Show in File Explorer	إظهار في مستكشف الملفات
+Copy the file path	نسخ مسار الملف
+Move to the Recycle Bin…	نقل إلى سلة المحذوفات…
+Move {0} to the Recycle Bin…	نقل {0} إلى سلة المحذوفات…
+Move {0} to the Recycle Bin?\n\nYou can get {1} back from the Recycle Bin. Stars, tags and albums for {2} are forgotten.	هل تريد نقل {0} إلى سلة المحذوفات؟\n\nيمكنك استعادة {1} من سلة المحذوفات. تُنسى نجوم ووسوم وألبومات {2}.
+{0} couldn't be moved to the Recycle Bin (in use, or Windows was asked to keep {1}):\n\n{2}	تعذّر نقل {0} إلى سلة المحذوفات (قيد الاستخدام، أو طُلب من Windows الاحتفاظ بـ {1}):\n\n{2}
+There's nothing here to export. Select photos, or choose a part of the library with some in it.	لا يوجد ما يُصدَّر هنا. اختر صورًا، أو اختر جزءًا من المكتبة فيه صور.
+There are no photos here for a slideshow.	لا توجد صور هنا لعرض شرائح.
+Is this {0}? ({1})	هل هذا {0}؟ ({1})
+Settings · KUDUPIX	الإعدادات · KUDUPIX
+Folders KUDUPIX looks in	المجلدات التي يبحث فيها KUDUPIX
+Photos and videos in these folders (and the folders inside them) are shown. They're only read: KUDUPIX never moves or changes them.	تُعرض الصور ومقاطع الفيديو في هذه المجلدات (والمجلدات داخلها). تُقرأ فقط: لا ينقلها KUDUPIX أو يغيّرها أبدًا.
+Add a folder…	إضافة مجلد…
+Add the usual ones (Pictures, Videos, OneDrive)	إضافة المعتادة (Pictures وVideos وOneDrive)
+Appearance	المظهر
+Same as Windows	مثل Windows
+Space KUDUPIX uses	المساحة التي يستخدمها KUDUPIX
+Small pictures for the grid: {0}. They're made again when needed.	صور صغيرة للشبكة: {0}. تُصنع من جديد عند الحاجة.
+Remove them	إزالتها
+Originals kept before “Save over the original”: {0}, {1}.	الأصول المحفوظة قبل “الحفظ فوق الأصل”: {0}، {1}.
+Open the folder	فتح المجلد
+Updates	التحديثات
+Check for a new KUDUPIX version when it starts	البحث عن إصدار جديد من KUDUPIX عند التشغيل
+Only asks GitHub for the latest version number. Nothing is downloaded without asking.	يسأل GitHub عن رقم أحدث إصدار فقط. لا يتم تنزيل أي شيء دون سؤالك.
+About KUDUPIX	حول KUDUPIX
+Close	إغلاق
+No folders yet: add one.	لا مجلدات بعد: أضف واحدًا.
+(not there now)	(غير موجود الآن)
+Remove	إزالة
+Choose a folder with photos or videos	اختر مجلدًا فيه صور أو مقاطع فيديو
+KUDUPIX	KUDUPIX
+Version {0} · Your photos and videos, organised	الإصدار {0} · صورك ومقاطع الفيديو، مرتّبة
+Azeem, with Claude and	Azeem, with Claude and
+Made by	Made by
+Licence	الترخيص
+MIT · free and open source	MIT · مجاني ومفتوح المصدر
+View	عرض
+Source code	الشيفرة المصدرية
+Pictures and videos	الصور ومقاطع الفيديو
+Opened and played with Windows' own codecs and player	تُفتح وتُشغّل بترميزات Windows ومشغّله
+Faces found and told apart on this PC with the YuNet (MIT) and SFace (Apache 2.0) models from OpenCV, run by ONNX Runtime (MIT)	يتم العثور على الوجوه وتمييزها على هذا الحاسوب بنموذجي YuNet (MIT) وSFace (Apache 2.0) من OpenCV، بتشغيل ONNX Runtime (MIT)
+Third-party	أطراف أخرى
+Third-party notices	إشعارات الأطراف الأخرى
+KUDUPIX works on your computer only. Your photos, videos and the faces in them never leave it, and it never changes them unless you choose “Save over the original” (which keeps the untouched photo first). The internet is used only to check for a new version, and to open a map when you ask.	يعمل KUDUPIX على حاسوبك فقط. لا تغادره صورك ومقاطع الفيديو والوجوه فيها أبدًا، ولا يغيّرها أبدًا إلا إذا اخترت “الحفظ فوق الأصل” (الذي يحتفظ أولًا بالصورة دون تغيير). يُستخدم الإنترنت فقط للبحث عن إصدار جديد ولفتح خريطة عندما تطلب ذلك.
+Check for updates	البحث عن تحديثات
+Couldn't find any published version yet.	لم يتم العثور على أي إصدار منشور بعد.
+KUDUPIX {0} is available. Open the download page?	KUDUPIX {0} متاح. هل تريد فتح صفحة التنزيل؟
+You have the latest version.	لديك أحدث إصدار.
+Couldn't check for updates. Check your internet connection and try again.	تعذّر البحث عن تحديثات. تحقّق من اتصالك بالإنترنت وحاول مرة أخرى.
+Leave out where the photos were taken	حذف مكان التقاط الصور
+The size it is	الحجم كما هو
+Large (2048 pixels)	كبير (2048 بكسل)
+Medium (1600 pixels)	متوسط (1600 بكسل)
+Small (1024 pixels)	صغير (1024 بكسل)
+For email (640 pixels)	للبريد الإلكتروني (640 بكسل)
+Export · KUDUPIX	تصدير · KUDUPIX
+{0} and {1}	{0} و{1}
+Copies of {0}, to share or keep elsewhere. Photos get their fixes; videos are copied as they are. The originals stay as they are.	نسخ من {0}، للمشاركة أو للحفظ في مكان آخر. تحصل الصور على تعديلاتها؛ وتُنسخ مقاطع الفيديو كما هي. تبقى الأصول كما هي.
+Photo size (the longest side)	حجم الصورة (الضلع الأطول)
+Best	الأفضل
+Good (smaller files)	جيد (ملفات أصغر)
+Smallest files	أصغر الملفات
+Quality	الجودة
+Phones store where each photo was taken. Leaving it out is safer when sharing.	تحفظ الهواتف مكان التقاط كل صورة. حذفه أكثر أمانًا عند المشاركة.
+Save them in	حفظها في
+KUDUPIX export	KUDUPIX export
+Choose…	اختيار…
+Where to save the copies	أين تُحفظ النسخ
+Stopped: {0} saved.	توقف: تم حفظ {0}.
+Saved {0} in {1}.{2}	تم حفظ {0} في {1}.{2}
+ {0} couldn't be saved: {1}	 تعذّر حفظ {0}: {1}
+No folder chosen	لم يتم اختيار مجلد
+Saving {0} of {1}: {2}	جارٍ حفظ {0} من {1}: {2}
+Slideshow · KUDUPIX	عرض شرائح · KUDUPIX
+·  paused	·  متوقف مؤقتًا
+{2}  ·  {0} of {1}	{2}  ·  {0} من {1}
+These photos couldn't be opened for printing.\n\n{0}	تعذّر فتح هذه الصور للطباعة.\n\n{0}
+KUDUPIX photos	KUDUPIX photos
+Looking for people in your photos… {0} of {1}. You can name people already.	جارٍ البحث عن أشخاص في صورك… {0} من {1}. يمكنك تسمية الأشخاص من الآن.
+Faces are looked for on this PC only; nothing is sent anywhere. Only faces big enough to tell who it is are grouped.	يتم البحث عن الوجوه على هذا الحاسوب فقط؛ لا يُرسل أي شيء إلى أي مكان. تُجمع فقط الوجوه الكبيرة بما يكفي لمعرفة صاحبها.
+Some faces might be people you've named. Have a look:	قد تكون بعض الوجوه لأشخاص سمّيتهم. ألقِ نظرة:
+People you've named	أشخاص سمّيتهم
+(hidden)	(مخفي)
+Who is this?	من هذا؟
+Groups of faces appear here as photos are looked at.	تظهر هنا مجموعات الوجوه كلما تم النظر في الصور.
+No more groups of faces to name.	لا مزيد من مجموعات الوجوه لتسميتها.
+The same face seen in more than one photo. Click a group to name it.	الوجه نفسه في أكثر من صورة. انقر على مجموعة لتسميتها.
+Don't show hidden people	عدم إظهار الأشخاص المخفيين
+Show hidden people ({0})	إظهار الأشخاص المخفيين ({0})
+‹ People	‹ الأشخاص
+Type their name. If one of these isn't the same person, click it to leave it out.	اكتب اسمه. إن لم يكن أحد هؤلاء الشخص نفسه، فانقر عليه لاستبعاده.
+Name them	تسميتهم
+Left out	مستبعد
+Named {0} “{1}”	تمت تسمية {0} “{1}”
+Name	الاسم
+hidden	مخفي
+See their photos	رؤية صوره
+Show in People	إظهار في الأشخاص
+Hide	إخفاء
+The same person as…	الشخص نفسه مثل…
+Forget this person	نسيان هذا الشخص
+Is this {0}?	هل هذا {0}؟
+These faces look a little like them. Say yes or no; it helps with the rest.	هذه الوجوه تشبهه قليلًا. قل نعم أو لا؛ فهذا يساعد في الباقي.
+Yes	نعم
+No	لا
+Faces of {0}	وجوه {0}
+Right-click a face that isn't them.	انقر بزر الفأرة الأيمن على وجه ليس له.
+Found by itself	وُجد تلقائيًا
+Rename	إعادة تسمية
+A new name. If someone already has it, the two become one person.	اسم جديد. إذا كان لدى أحد هذا الاسم، يصبح الاثنان شخصًا واحدًا.
+{0} and {1} are the same person? Their faces are put together under “{2}”.	هل {0} و{1} الشخص نفسه؟ تُجمع وجوههما تحت “{2}”.
+No one else is named yet	لم تتم تسمية أحد آخر بعد
+Forget “{0}”? Their photos stay; their faces go back to “Who is this?”.	هل تريد نسيان “{0}”؟ تبقى صوره؛ وتعود وجوهه إلى “من هذا؟”.
+This is {0}	هذا {0}
+This is someone else…	هذا شخص آخر…
+Their name.	اسمه.
+Not {0}	ليس {0}
+Not a face	ليس وجهًا
+The face models aren't next to KUDUPIX (install it again to get them).	نماذج الوجوه ليست بجانب KUDUPIX (ثبّته مرة أخرى للحصول عليها).
+People can't work on this PC: {0}	لا يمكن لقسم الأشخاص العمل على هذا الحاسوب: {0}
+KUDUPIX faces	KUDUPIX faces
+Looking for people… {0} of {1} photos	جارٍ البحث عن أشخاص… {0} من {1} صور
+Photos and videos	الصور ومقاطع الفيديو
+Video	فيديو
+Fixed in KUDUPIX (the file itself isn't changed until you save)	معدّلة في KUDUPIX (لا يتغيّر الملف نفسه حتى تحفظ)
+{0} ran into a problem it couldn't get past, and has to close.	واجه {0} مشكلة لم يستطع تجاوزها، ولا بد من إغلاقه.
+KUDUPIX thumbnails	KUDUPIX thumbnails
+{0}.jpg	{0}.jpg
+Hide faces	إخفاء الوجوه
+Show faces	إظهار الوجوه
+With {0}	مع {0}
+Faces show on the photo as it was taken: undo turning, straightening and cropping to see them.	تظهر الوجوه على الصورة كما التُقطت: تراجع عن التدوير والتقويم والقص لرؤيتها.
+Back to photos	العودة إلى الصور
+Esc	Esc
+A frame round each face, with who it is. Click a frame to name it or fix it.	إطار حول كل وجه، مع اسم صاحبه. انقر على إطار لتسميته أو تصحيحه.
+Delete	حذف
+Move to the Recycle Bin (Delete)	نقل إلى سلة المحذوفات (Delete)
+Previous (Left arrow)	السابق (السهم الأيسر)
+Next (Right arrow)	التالي (السهم الأيمن)
+Play or pause (Space)	تشغيل أو إيقاف مؤقت (Space)
+Position in the video	الموضع في الفيديو
+Sound on or off	تشغيل الصوت أو كتمه
+unknown	غير معروف
+Windows can't play this video here (it may need a codec Windows doesn't have).\nDouble-click the file in File Explorer to play it with another player.	لا يستطيع Windows تشغيل هذا الفيديو هنا (قد يحتاج إلى ترميز غير موجود في Windows).\nانقر نقرًا مزدوجًا على الملف في مستكشف الملفات لتشغيله بمشغّل آخر.
+Windows can't open this picture (it may need a codec, such as the HEIF one from the Microsoft Store, for HEIC photos).	لا يستطيع Windows فتح هذه الصورة (قد يحتاج إلى ترميز، مثل HEIF من Microsoft Store لصور HEIC).
+{0} (key {1})	{0} (المفتاح {1})
+Saving a copy…	جارٍ حفظ نسخة…
+The copy couldn't be saved.\n\n{0}	تعذّر حفظ النسخة.\n\n{0}
+The copy wasn't saved	لم تُحفظ النسخة
+Saved as {0}	تم الحفظ باسم {0}
+Save the fixes into “{0}” itself?\n\nKUDUPIX first keeps the untouched photo in its own folder, so you can put it back later (“Put the original back”). The photo keeps its date and details.	هل تريد حفظ التعديلات في “{0}” نفسها؟\n\nيحتفظ KUDUPIX أولًا بالصورة دون تغيير في مجلده الخاص، لتتمكن من إعادتها لاحقًا (“إعادة الأصل”). تحتفظ الصورة بتاريخها وتفاصيلها.
+Save over the original	الحفظ فوق الأصل
+Saving…	جارٍ الحفظ…
+The photo couldn't be saved; it's unchanged.\n\n{0}	تعذّر حفظ الصورة؛ لم تتغيّر.\n\n{0}
+Not saved	لم تُحفظ
+Saved into {0} (the original is kept)	تم الحفظ في {0} (الأصل محفوظ)
+Put back the original of “{0}”, as it was before you saved over it on {1}?\n\nThe fixes saved into it go.	هل تريد إعادة أصل “{0}” كما كان قبل الحفظ فوقه في {1}؟\n\nتذهب التعديلات المحفوظة فيه.
+Put the original back	إعادة الأصل
+The original couldn't be put back.\n\n{0}	تعذّرت إعادة الأصل.\n\n{0}
+The original of {0} is back	عاد أصل {0}
+Fix this photo	تعديل هذه الصورة
+The file stays as it is until you save. Your fixes are kept in KUDUPIX, so you can change them later.	يبقى الملف كما هو حتى تحفظ. تُحفظ تعديلاتك في KUDUPIX، لتتمكن من تغييرها لاحقًا.
+Auto-fix	تعديل تلقائي
+Brightness and colours in one click (click again to undo)	السطوع والألوان بنقرة واحدة (انقر مرة أخرى للتراجع)
+Crop	قص
+Drag the corners or edges of the frame; drag inside it to move it	اسحب زوايا الإطار أو حوافه؛ اسحب داخله لتحريكه
+A quarter turn to the left ([)	ربع دورة لليسار ([)
+A quarter turn to the right (])	ربع دورة لليمين (])
+Straighten	تقويم
+Level a sloping horizon	تسوية أفق مائل
+Red-eye	العين الحمراء
+Click on each red eye in the photo	انقر على كل عين حمراء في الصورة
+Done cropping	انتهى القص
+Whole photo	الصورة كاملة
+Click on each red eye in the photo. Click Red-eye again when you're done.	انقر على كل عين حمراء في الصورة. انقر على العين الحمراء مرة أخرى عند الانتهاء.
+Undo the red-eye fixes ({0})	التراجع عن تصحيحات العين الحمراء ({0})
+Double-click to put it back to 0	انقر نقرًا مزدوجًا للعودة إلى 0
+Brightness	السطوع
+Contrast	التباين
+Warmth	الدفء
+Colour	اللون
+Undo all the fixes	التراجع عن كل التعديلات
+Save a copy	حفظ نسخة
+Save over the original…	الحفظ فوق الأصل…
+Windows can't write {0} photos; save a copy instead (it's saved as JPEG).	لا يستطيع Windows كتابة صور {0}؛ احفظ نسخة بدلًا من ذلك (تُحفظ بصيغة JPEG).
+“Save a copy” makes {0} next to the photo. “Save over the original” asks first and keeps the untouched photo, so you can put it back later.	“حفظ نسخة” يصنع {0} بجانب الصورة. “الحفظ فوق الأصل” يسأل أولًا ويحتفظ بالصورة دون تغيير، لتتمكن من إعادتها لاحقًا.
+Put the original back (saved over on {0})	إعادة الأصل (حُفظ فوقه في {0})
+Videos play here with Windows' own player. Stars, tags and albums work for videos too; fixes are for photos.	تُشغَّل مقاطع الفيديو هنا بمشغّل Windows. النجوم والوسوم والألبومات تعمل مع مقاطع الفيديو أيضًا؛ التعديلات للصور.
+Back to the fixes	العودة إلى التعديلات
+{0} item	{0} عنصر
+{0} items	{0} عناصر
+{0} folder	{0} مجلد
+{0} folders	{0} مجلدات
+{0} group	{0} مجموعة
+{0} groups	{0} مجموعات
+{0} copy	{0} نسخة
+{0} copies	{0} نسخ
+{0} file	{0} ملف
+{0} files	{0} ملفات
+{0} photo	{0} صورة
+{0} photos	{0} صور
+{0} video	{0} فيديو
+{0} videos	{0} مقاطع فيديو
+{0} face	{0} وجه
+{0} faces	{0} وجوه
