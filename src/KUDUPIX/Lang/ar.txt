@@ -150,6 +150,7 @@ Add a folder…	إضافة مجلد…
 Add the usual ones (Pictures, Videos, OneDrive)	إضافة المعتادة (Pictures وVideos وOneDrive)
 Appearance	المظهر
 Same as Windows	مثل Windows
+Language	اللغة
 Space KUDUPIX uses	المساحة التي يستخدمها KUDUPIX
 Small pictures for the grid: {0}. They're made again when needed.	صور صغيرة للشبكة: {0}. تُصنع من جديد عند الحاجة.
 Remove them	إزالتها

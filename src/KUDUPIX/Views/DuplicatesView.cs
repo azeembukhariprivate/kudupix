@@ -244,7 +244,7 @@ namespace Kudupix.Views
             {
                 var keep = row.Keep.Contains(item);
                 var image = new Image { Stretch = Stretch.UniformToFill };
-                var pic = new Grid { Width = 200, Height = 132, ClipToBounds = true, Cursor = Cursors.Hand, ToolTip = item.Path + "\n\nClick to keep or not keep this one" }.Res(Panel.BackgroundProperty, "SurfaceAltBg");
+                var pic = new Grid { Width = 200, Height = 132, ClipToBounds = true, Cursor = Cursors.Hand, ToolTip = Lang.T("{0}\n\nClick to keep or not keep this one", item.Path) }.Res(Panel.BackgroundProperty, "SurfaceAltBg");
                 pic.Children.Add(image);
                 var ready = Thumbs.Get(item, data?.Edit(item.Path), b => { if (b != null) image.Source = b; });
                 if (ready != null) image.Source = ready;
@@ -272,9 +272,10 @@ namespace Kudupix.Views
             }
             var first = row.Group.Items.FirstOrDefault(i => i.Taken.HasValue);
             var about = Ui.Column(
-                Ui.Subtle(row.Group.Exact ? "Exact copies" : "Same photo", 12, false),
-                Ui.Subtle(first?.Taken != null ? "Taken " + first.Taken.Value.ToString("d MMM yyyy, HH:mm", CultureInfo.CurrentCulture) : string.Empty, 12, false));
-            var not = Ui.Link("Not copies: leave these", (s, e) => row.Owner.NotCopies(row));
+                // Rows come from a template, so their texts are put into the language here.
+                Ui.Subtle(Lang.T(row.Group.Exact ? "Exact copies" : "Same photo"), 12, false),
+                Ui.Subtle(first?.Taken != null ? Lang.T("Taken {0}", first.Taken.Value.ToString("d MMM yyyy, HH:mm", CultureInfo.CurrentCulture)) : string.Empty, 12, false));
+            var not = Ui.Link(Lang.T("Not copies: leave these"), (s, e) => row.Owner.NotCopies(row));
             not.HorizontalAlignment = HorizontalAlignment.Left;
             about.Children.Add(not.Margin(0, 6, 0, 0));
             about.VerticalAlignment = VerticalAlignment.Center;

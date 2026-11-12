@@ -304,8 +304,9 @@ namespace Kudupix.Views
             Margin = new Thickness(0, 0, 0, row.IsHeader ? 0 : PhotoGrid.Gap);
             if (row.IsHeader)
             {
-                var title = Ui.Text(row.Title, 14, bold: true);
-                var note = Ui.Subtle(row.Note, 12, false).Margin(10, 0, 0, 0);
+                // Rows come from a template, so the heading is put into the language here ("Today", "{0} photos").
+                var title = Ui.Text(Lang.T(row.Title), 14, bold: true);
+                var note = Ui.Subtle(Lang.T(row.Note), 12, false).Margin(10, 0, 0, 0);
                 note.VerticalAlignment = VerticalAlignment.Bottom;
                 Children.Add(Ui.Row(title, note).Margin(0, 16, 0, 8));
                 return;

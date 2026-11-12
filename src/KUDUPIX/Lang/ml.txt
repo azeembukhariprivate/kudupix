@@ -150,6 +150,7 @@ Add a folder…	ഒരു ഫോൾഡർ ചേർക്കുക…
 Add the usual ones (Pictures, Videos, OneDrive)	സാധാരണയുള്ളവ ചേർക്കുക (Pictures, Videos, OneDrive)
 Appearance	രൂപം
 Same as Windows	വിൻഡോസിലേതു പോലെ
+Language	ഭാഷ
 Space KUDUPIX uses	KUDUPIX ഉപയോഗിക്കുന്ന സ്ഥലം
 Small pictures for the grid: {0}. They're made again when needed.	ഗ്രിഡിനുള്ള ചെറിയ ചിത്രങ്ങൾ: {0}. വേണ്ടപ്പോൾ വീണ്ടും ഉണ്ടാക്കും.
 Remove them	അവ നീക്കുക

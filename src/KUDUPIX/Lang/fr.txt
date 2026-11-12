@@ -150,6 +150,7 @@ Add a folder…	Ajouter un dossier…
 Add the usual ones (Pictures, Videos, OneDrive)	Ajouter les habituels (Images, Vidéos, OneDrive)
 Appearance	Apparence
 Same as Windows	Comme Windows
+Language	Langue
 Space KUDUPIX uses	Place utilisée par KUDUPIX
 Small pictures for the grid: {0}. They're made again when needed.	Petites images pour la grille : {0}. Elles sont refaites au besoin.
 Remove them	Les supprimer
